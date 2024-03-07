@@ -10,11 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "nuxt": "^3.10.3",
+    "primevue": "^3.49.1",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-carousel": "^0.3.1"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "nuxt-primevue": "^0.3.1",
     "sass": "^1.71.1"
   }
 }
