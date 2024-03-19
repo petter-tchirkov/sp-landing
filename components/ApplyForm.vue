@@ -1,8 +1,8 @@
 <template>
-  <section class="apply">
-    <img :src="src" alt="" />
-    <div class="apply__content">
-      <form class="apply__form" @submit="submitForm">
+  <section class="apply flex flex-col-reverse lg:flex-row gap-28 items-center relative mb-32">
+    <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12"/>
+    <div class="apply__content px-11 2xl:px-40">
+      <form class="apply__form w-full px-4 py-12" @submit="submitForm">
         <div class="apply__input-group">
           <label for="">Name</label>
           <input
@@ -120,30 +120,18 @@ const submitForm = async (e: Event) => {
 
 <style scoped lang="scss">
 .apply {
-  display: flex;
-  align-items: center;
-  margin-bottom: 300px;
-  position: relative;
 
   &__content {
-    max-width: 1110px;
-    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: end;
   }
 
-  img {
-    position: absolute;
-    top: -120px;
-    left: 0;
-  }
 
   &__form {
     background: #ffffff;
     border-radius: 35px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    padding: 44px 32px;
   }
 
   &__input-group {
@@ -151,7 +139,6 @@ const submitForm = async (e: Event) => {
     flex-direction: column;
     width: 100%;
     margin-bottom: 46px;
-    width: 505px;
 
     input {
       border-radius: 9px;

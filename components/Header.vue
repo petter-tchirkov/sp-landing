@@ -1,61 +1,52 @@
+<script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
+const { isSidebarShown } = storeToRefs(useGlobalStore());
+const { x, y } = useWindowScroll()
+
+
+onBeforeMount(() => {
+  y.value = 0
+})
+</script>
+
 <template>
-  <header class="header">
-    <div class="header__container">
+  <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 lg:relative z-20 transition"
+    :class="y > 100 ? 'bg-green' : 'bg-transparent'">
+    <div class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto">
       <NuxtLink to="/" class="after:hidden">
-        <img class="header__logo" src="/logo.svg" />
+        <img src="/logo.svg" />
       </NuxtLink>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/for-restaurants">
-              For restaurants
-            </NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/about-us">About us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/contact-us">Contact us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/faqs">FAQs</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__right">
+      <ul class="hidden xl:flex items-center gap-4">
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/for-restaurants">
+            For restaurants
+          </NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/about-us">About us</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/contact-us">Contact us</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/faqs">FAQs</NuxtLink>
+        </li>
+      </ul>
+      <button class="xl:hidden" @click="isSidebarShown = !isSidebarShown">
+        <img src="/burger.svg" alt="" />
+      </button>
+      <div class="hidden xl:flex items-center gap-5 mb-2 ml-24">
         <LangSwitcher />
         <img src="/user.png" alt="" />
         <button class="btn btn-light !text-[#1d9e92]">Book a Demo</button>
       </div>
     </div>
+    <Sidebar />
   </header>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped lang="scss">
 .header {
-  padding-top: 42px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid #fff;
-  width: 100%;
-
-  &__container {
-    display: flex;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-inline: 165px;
-  }
-
-  &__right {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    margin-left: 100px;
-    margin-bottom: 10px;
-  }
-
   a {
     position: relative;
     transition: all 0.3s;
@@ -76,6 +67,14 @@
         width: 80%;
       }
     }
+  }
+}
+
+.nav {
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 

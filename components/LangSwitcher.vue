@@ -57,6 +57,7 @@ const selectedLanguage = ref("en");
 const languages = ref([
   { name: "English", code: "en" },
   { name: "Espaniol", code: "es" },
+  { name: "Deutsch", code: "de" },
   { name: "Українська", code: "ua" },
 ]);
 </script>

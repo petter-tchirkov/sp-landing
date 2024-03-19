@@ -1,9 +1,6 @@
 export default {
   content: ["presets/**/*.{js,vue,ts}"],
   theme: {
-    screens: {
-      'dp': '1440px'
-    },
     extend: {
       colors: {
         "primary-50": "rgb(var(--primary-50))",
@@ -29,7 +26,10 @@ export default {
         "surface-800": "rgb(var(--surface-800))",
         "surface-900": "rgb(var(--surface-900))",
         "surface-950": "rgb(var(--surface-950))",
-        green: "#1D9E92"
+        green: "#1D9E92",
+      },
+      spacing: {
+        dp: "1440px",
       },
     },
   },

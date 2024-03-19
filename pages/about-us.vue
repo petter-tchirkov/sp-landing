@@ -1,18 +1,17 @@
 <template>
-  <div class="wrapper">
-    <Header class="bg-green" />
+  <div class="wrapper pt-20 lg:pt-0">
+    <Header class="!bg-green"/>
     <div class="text-center my-24">
-      <h2 class="text-[64px] font-bold mb-6">ABOUT US</h2>
-      <p class="text-xl">
+      <h2 class="text-[40px] lg:text-[64px] font-bold uppercase mb-6">ABOUT US</h2>
+      <p class="text-xl px-11">
         Imagine guests can view your menu and pay for meals in one split-second
         scan. Don’t imagine…
       </p>
     </div>
-    <div class="flex long-text py-[200px]">
-      <div
-        class="m-auto max-w-[1110px] flex justify-between gap-14 items-center"
-      >
-        <div>
+    <div class="flex long-text lg:pt-[400px] relative">
+      <img src="/about-us/bg1.png" alt="" class="object-cover absolute -bottom-48 left-0 -z-10 h-[150%] lg:hidden">
+      <div class="m-auto max-w-[1110px] flex flex-col lg:flex-row justify-between gap-14 items-center pb-96">
+        <div class="px-11 pt-16">
           <p class="text-white text-lg mb-7">
             If you’re like us, you understand efficiency, speed, and
             convenience. Not only because we’re a 21st-century business that
@@ -30,13 +29,12 @@
             while keeping staff and guests happy.
           </p>
         </div>
-        <img src="/about-us/1.png" alt="" />
+        <img class="px-11" src="/about-us/1.png" alt="" />
       </div>
     </div>
-    <div class="map m-auto max-w-[1110px]">
+    <div class="map m-auto max-w-[1110px] px-11 lg:px-0">
       <h2
-        class="bg-green px-[38px] py-2 rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto"
-      >
+        class="bg-green px-[38px] py-9 lg:py-2 rounded-[33px] lg:rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto">
         Today, 1000 + restaurants are on board with qlub
       </h2>
       <p class="text-lg text-center max-w-[800px] mx-auto mb-16">
@@ -48,11 +46,10 @@
     </div>
     <div class="who-we-are">
       <h2
-        class="bg-green px-[38px] py-2 rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto"
-      >
+        class="bg-green px-[38px] py-2 rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto">
         WHO WE ARE
       </h2>
-      <p class="text-lg text-center max-w-[800px] mx-auto mb-16">
+      <p class="text-lg text-center max-w-[800px] mx-auto mb-16 px-11 lg:px-0">
         While building and scaling multiple internet startups and raising
         millions of dollars, our founders noticed something baffling: There have
         been so few technology - driven improvements to the dine-in experience
@@ -63,8 +60,10 @@
         easy as it sounds, but it’s glorious work. We got backed by $17-million
         funding and today, our team is 200+ members strong across the globe.
       </p>
-      <img class="mx-auto mb-[200px]" src="/about-us/photos.png" alt="" />
-      <div class="flex justify-between mx-auto max-w-[1110px] mb-[200px]">
+      <img class="mx-auto mb-16 lg:mb-[200px]" :src="width > 768 ? '/about-us/photos.png' : '/about-us/photos-mob.png'"
+        alt="" />
+      <div
+        class="flex flex-col lg:flex-row justify-between mx-auto max-w-[1110px] mb-[200px] px-11 lg:px-0 gap-12 lg:gap-0">
         <div class="flex gap-4 max-w-[300px] items-start">
           <img src="/icons/check.svg" alt="" />
           <p>
@@ -83,17 +82,27 @@
           <p>Convenience par excellence.</p>
         </div>
       </div>
+      <div class="bg-green py-14 flex flex-col lg:flex-row gap-6 px-11 xl:px-40 mb-20">
+        <span class="text-white text-2xl">Join the qlub right now!</span>
+        <button class="btn btn-light">Book a Demo</button>
+      </div>
       <ApplyForm src="/index/customer.png" />
       <Footer />
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useWindowSize } from '@vueuse/core';
+const { width } = useWindowSize();
+</script>
 
 <style scoped lang="scss">
-.long-text {
-  background: url("/about-us/bg1.png") center center no-repeat;
-  background-size: cover;
+@media screen and (min-width: 1024px) {
+  .long-text {
+    background: url("/about-us/bg1.png") center center no-repeat;
+    background-size: cover;
+  }
+
 }
 </style>

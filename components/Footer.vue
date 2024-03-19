@@ -1,32 +1,33 @@
 <template>
-  <footer class="footer">
-    <div class="footer__content container">
-      <div class="footer__logo">
+  <footer class="footer pt-[220px]">
+    <div class="footer__content flex flex-col lg:flex-row px-11 xl:px-40 justify-between lg:mb-20">
+      <div class="footer__logo mb-7 xl:mb-0">
         <img src="/logo.svg" alt="Logo" />
       </div>
-      <nav class="footer__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/for-restaurants">
-              For restaurants
-            </NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/about-us">About us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/contact-us">Contact us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/faqs">FAQs</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__socials">
-        <img src="/ig.png" alt="" />
-        <img src="/fb.png" alt="" />
+      <ul class="flex flex-col xl:flex-row xl:items-center gap-9 mb-9 xl:mb-0">
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/for-restaurants">
+            For restaurants
+          </NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/about-us">About us</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/contact-us">Contact us</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" to="/faqs">FAQs</NuxtLink>
+        </li>
+      </ul>
+      <div class="footer__socials mb-14 xl:mb-0">
+        <img src="/ig.png" alt="" class="w-6 h-6"/>
+        <img src="/fb.png" alt="" class="w-6 h-6"/>
       </div>
     </div>
+      <div class="border-t border-t-white py-9">
+        <p class="text-center text-white text-xs font-light">2023 © Fast Technology Holding Limited</p>
+      </div>
   </footer>
 </template>
 
@@ -35,15 +36,7 @@
 <style scoped lang="scss">
 .footer {
   background: url(/footer.png);
-  padding-top: 190px;
-  padding-bottom: 90px;
-
-  &__content {
-    display: flex;
-    align-items: center;
-    padding-inline: 165px;
-    justify-content: space-between;
-  }
+  background-size: cover;
 
   &__socials {
     display: flex;

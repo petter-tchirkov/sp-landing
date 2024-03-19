@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <Header class="bg-green" />
+  <div class="pt-20 lg:pt-0">
+    <Header class="!bg-green" />
     <div class="my-24 text-center">
-      <h2 class="text-[64px] font-bold leading-8">WANT TO CONTACT</h2>
-      <h2 class="text-[64px] font-bold text-green">US DIRECTLY</h2>
+      <h2 class="text-[40px] xl:text-[64px] font-bold leading-8">DID WE MISSED</h2>
+      <h2 class="text-[40px] xl:text-[64px] font-bold text-green">ANYTHING?</h2>
     </div>
-    <div class="max-w-[1100px] mx-auto mb-40">
+    <div class="max-w-[1100px] mx-auto mb-40 px-11">
       <Accordion :activeIndex="0">
         <AccordionTab
           header="WHAT IS QLUB?"

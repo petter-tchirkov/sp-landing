@@ -80,30 +80,18 @@ html {
     margin-bottom: 19px;
   }
 }
+.shadow-box {
+  box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.25);
+}
 
 .black-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  text-align: left;
-  text-transform: uppercase;
+    @apply font-bold text-[36px] xl:text-[40px] leading-[50px] text-left uppercase;
 }
 
 .white-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: left;
-    color: #fff;
-    text-transform: uppercase;
+    @apply font-bold text-[36px] xl:text-[40px] leading-[50px] text-left uppercase text-white;
 }
 
 .green-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  text-align: left;
-  text-transform: uppercase;
-  color: #1d9e92;
-  margin-bottom: 60px;
+  @apply font-bold text-[36px] xl:text-[40px] leading-[50px] text-left uppercase text-green;
 }
