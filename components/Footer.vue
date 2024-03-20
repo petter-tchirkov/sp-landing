@@ -6,18 +6,18 @@
       </div>
       <ul class="flex flex-col xl:flex-row xl:items-center gap-9 mb-9 xl:mb-0">
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" to="/for-restaurants">
-            For restaurants
+          <NuxtLink class="nav__link" :to="localePath('/for-restaurants')">
+            {{$t('header.forRestaurants')}}
           </NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" to="/about-us">About us</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/about-us')">{{$t('header.aboutUs')}}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" to="/contact-us">Contact us</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{$t('header.contactUs')}}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" to="/faqs">FAQs</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/faqs')">{{$t('header.faqs')}}</NuxtLink>
         </li>
       </ul>
       <div class="footer__socials mb-14 xl:mb-0">
@@ -34,8 +34,7 @@
 </template>
 
 <script setup lang="ts">
-const a = ref(4);
-a.value = "5";
+const localePath = useLocalePath()
 </script>
 
 <style scoped lang="scss">

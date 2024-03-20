@@ -1,7 +1,7 @@
 <template>
   <Dropdown
-    v-model="selectedLanguage"
-    :options="languages"
+    v-model="language"
+    :options="getLanguagesWithoutCurrent(locale)"
     option-label="name"
     option-value="code"
     :pt="{
@@ -14,6 +14,9 @@
           state.overlayVisible ? 'rounded-t-[16px]' : 'rounded-[30px]',
         ],
       }),
+      trigger: () => ({
+        class: ['hidden']
+      }),
       list: ({ state }) => {
         return {
           class: [
@@ -22,7 +25,7 @@
             'transition-all',
             'duration-300',
             'py-2',
-            'w-[103%]',
+            'w-[95%]',
             'translate-x-[-1px]',
             state.overlayVisible
               ? 'border border-green border-t-transparent'
@@ -52,13 +55,21 @@
 </template>
 
 <script setup lang="ts">
-const selectedLanguage = ref("en");
-const languages = ref([
-  { name: "English", code: "en" },
-  { name: "Espaniol", code: "es" },
-  { name: "Deutsch", code: "de" },
-  { name: "Українська", code: "ua" },
-]);
+
+const { locale, locales, setLocale } = useI18n();
+
+
+  const getLanguagesWithoutCurrent = (currentLang: string) => {
+    return locales.value.filter((lang) => lang.code !== currentLang)
+  }
+
+  const language = computed({
+    get: () => locale.value,
+    set: (val: string) => {
+      setLocale(val)
+    },
+  })
+
 </script>
 
 <style scoped></style>

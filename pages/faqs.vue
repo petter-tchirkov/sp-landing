@@ -3,20 +3,20 @@
     <PreLoader />
     <Header class="!bg-green" />
     <div class="my-24 text-center">
-      <h2 class="text-[40px] xl:text-[64px] font-bold leading-8">DID WE MISSED</h2>
-      <h2 class="text-[40px] xl:text-[64px] font-bold text-green">ANYTHING?</h2>
+      <h2 class="text-[40px] xl:text-[64px] font-bold leading-8 uppercase">{{$t('faqs.did')}}</h2>
+      <h2 class="text-[40px] xl:text-[64px] font-bold text-green uppercase">{{$t('faqs.anything')}}</h2>
     </div>
     <div class="max-w-[1100px] mx-auto mb-40 px-11">
       <Accordion :activeIndex="0">
         <AccordionTab
-          header="WHAT IS QLUB?"
+          :header="$t('faqs.what')"
           :pt="{
             root: () => ({
               class: ['mb-4'],
             }),
             headerAction: ({ context }) => ({
               class: [
-                'flex justify-between flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
                 context.active
                   ? 'rounded-t-[28px] bg-green'
                   : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
@@ -28,9 +28,7 @@
           }"
         >
           <p class="m-0 w-4/5">
-            Qlub is a web-based payment method. That means your customers don't
-            need to download any app or sign up anywhere. Qlub works on any web
-            browser.
+            {{$t('faqs.whatText')}}
           </p>
           <template #headericon="scope">
             <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
@@ -38,14 +36,14 @@
           </template>
         </AccordionTab>
         <AccordionTab
-          header="HOW DO I SEE MY TRANSACTIONS?"
+          :header="$t('faqs.how')"
           :pt="{
             root: () => ({
               class: ['mb-4'],
             }),
             headerAction: ({ context }) => ({
               class: [
-                'flex justify-between flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
                 context.active
                   ? 'rounded-t-[28px] bg-green'
                   : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
@@ -57,9 +55,7 @@
           }"
         >
           <p class="m-0 w-4/5">
-            Qlub is a web-based payment method. That means your customers don't
-            need to download any app or sign up anywhere. Qlub works on any web
-            browser.
+            {{$t('faqs.howText')}}
           </p>
           <template #headericon="scope">
             <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
@@ -67,14 +63,14 @@
           </template>
         </AccordionTab>
         <AccordionTab
-          header="IS QLUB AN APP?"
+        :header="$t('faqs.do')"
           :pt="{
             root: () => ({
               class: ['mb-4'],
             }),
             headerAction: ({ context }) => ({
               class: [
-                'flex justify-between flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
                 context.active
                   ? 'rounded-t-[28px] bg-green'
                   : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
@@ -90,20 +86,18 @@
             <img v-else src="/icons/minus.svg" alt="" />
           </template>
           <p class="m-0 w-4/5">
-            Qlub is a web-based payment method. That means your customers don't
-            need to download any app or sign up anywhere. Qlub works on any web
-            browser.
+            {{$t('faqs.doText')}}
           </p>
         </AccordionTab>
         <AccordionTab
-          header="DO YOU INTEGRATE WITH MY POS?"
+        :header="$t('faqs.doYou')"
           :pt="{
             root: () => ({
               class: ['mb-4'],
             }),
             headerAction: ({ context }) => ({
               class: [
-                'flex justify-between flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
                 context.active
                   ? 'rounded-t-[28px] bg-green'
                   : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
@@ -119,20 +113,18 @@
             <img v-else src="/icons/minus.svg" alt="" />
           </template>
           <p class="m-0 w-4/5">
-            Qlub is a web-based payment method. That means your customers don't
-            need to download any app or sign up anywhere. Qlub works on any web
-            browser.
+            {{$t('faqs.doYouText')}}
           </p>
         </AccordionTab>
         <AccordionTab
-          header="IS QLUB SECURE?"
+        :header="$t('faqs.howLong')"
           :pt="{
             root: () => ({
               class: ['mb-4'],
             }),
             headerAction: ({ context }) => ({
               class: [
-                'flex justify-between flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
                 context.active
                   ? 'rounded-t-[28px] bg-green'
                   : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
@@ -148,9 +140,142 @@
             <img v-else src="/icons/minus.svg" alt="" />
           </template>
           <p class="m-0 w-4/5">
-            Qlub is a web-based payment method. That means your customers don't
-            need to download any app or sign up anywhere. Qlub works on any web
-            browser.
+            {{$t('faqs.howLongText')}}
+          </p>
+        </AccordionTab>
+        <AccordionTab
+        :header="$t('faqs.can')"
+          :pt="{
+            root: () => ({
+              class: ['mb-4'],
+            }),
+            headerAction: ({ context }) => ({
+              class: [
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                context.active
+                  ? 'rounded-t-[28px] bg-green'
+                  : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
+              ],
+            }),
+            content: ({ context }) => ({
+              class: ['bg-green text-white pl-10 rounded-b-[28px] pb-10 pt-3'],
+            }),
+          }"
+        >
+          <template #headericon="scope">
+            <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
+            <img v-else src="/icons/minus.svg" alt="" />
+          </template>
+          <p class="m-0 w-4/5">
+            {{$t('faqs.canText')}}
+          </p>
+        </AccordionTab>
+        <AccordionTab
+        :header="$t('faqs.is')"
+          :pt="{
+            root: () => ({
+              class: ['mb-4'],
+            }),
+            headerAction: ({ context }) => ({
+              class: [
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                context.active
+                  ? 'rounded-t-[28px] bg-green'
+                  : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
+              ],
+            }),
+            content: ({ context }) => ({
+              class: ['bg-green text-white pl-10 rounded-b-[28px] pb-10 pt-3'],
+            }),
+          }"
+        >
+          <template #headericon="scope">
+            <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
+            <img v-else src="/icons/minus.svg" alt="" />
+          </template>
+          <p class="m-0 w-4/5">
+            {{$t('faqs.isText')}}
+          </p>
+        </AccordionTab>
+        <AccordionTab
+        :header="$t('faqs.which')"
+          :pt="{
+            root: () => ({
+              class: ['mb-4'],
+            }),
+            headerAction: ({ context }) => ({
+              class: [
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                context.active
+                  ? 'rounded-t-[28px] bg-green'
+                  : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
+              ],
+            }),
+            content: ({ context }) => ({
+              class: ['bg-green text-white pl-10 rounded-b-[28px] pb-10 pt-3'],
+            }),
+          }"
+        >
+          <template #headericon="scope">
+            <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
+            <img v-else src="/icons/minus.svg" alt="" />
+          </template>
+          <p class="m-0 w-4/5">
+            {{$t('faqs.whatAre')}}
+          </p>
+        </AccordionTab>
+        <AccordionTab
+        :header="$t('faqs.whichText')"
+          :pt="{
+            root: () => ({
+              class: ['mb-4'],
+            }),
+            headerAction: ({ context }) => ({
+              class: [
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                context.active
+                  ? 'rounded-t-[28px] bg-green'
+                  : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
+              ],
+            }),
+            content: ({ context }) => ({
+              class: ['bg-green text-white pl-10 rounded-b-[28px] pb-10 pt-3'],
+            }),
+          }"
+        >
+          <template #headericon="scope">
+            <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
+            <img v-else src="/icons/minus.svg" alt="" />
+          </template>
+          <p class="m-0 w-4/5">
+            {{$t('faqs.whatAre')}}
+          </p>
+        </AccordionTab>
+        <AccordionTab
+        :header="$t('faqs.howMuch')"
+          :pt="{
+            root: () => ({
+              class: ['mb-4'],
+            }),
+            headerAction: ({ context }) => ({
+              class: [
+                'flex justify-between uppercase flex-row-reverse w-full text-lg font-bold p-4 pl-10 border-0 border-b-transparent -mb-1 items-center',
+                context.active
+                  ? 'rounded-t-[28px] bg-green'
+                  : 'rounded-[28px] bg-[#1D9E92] bg-opacity-20',
+              ],
+            }),
+            content: ({ context }) => ({
+              class: ['bg-green text-white pl-10 rounded-b-[28px] pb-10 pt-3'],
+            }),
+          }"
+        >
+          <template #headericon="scope">
+            <img v-if="!scope.active" src="/icons/plus.svg" alt="" />
+            <img v-else src="/icons/minus.svg" alt="" />
+          </template>
+          <p class="m-0 w-4/5">
+            {{$t('faqs.howMuchText')}}
           </p>
         </AccordionTab>
       </Accordion>

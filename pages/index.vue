@@ -9,35 +9,34 @@
                 <div class="hero__info flex flex-col lg:flex-row px-11 xl:px-40">
                     <div class="hero__text">
                         <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase">
-                            The Fastest Payment for
+                            {{ $t("index.hero.payForYourMeal") }}
                         </h1>
                         <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
-                            restaurants
+                            {{ $t("index.hero.fast") }}
                         </h2>
                         <p class="hero__description">
-                            Imagine guests can view your menu and pay for meals in one
-                            split-second scan. Don’t imagine…
+                            {{ $t("index.hero.imagineGuests") }}
                         </p>
-                        <button class="hero__btn btn btn-light">Book a demo</button>
+                        <button class="hero__btn btn btn-light">{{ $t("header.bookADemo") }}</button>
                     </div>
                     <img src="/index/qr.png" alt="" />
                 </div>
                 <div class="hero__specs flex flex-col lg:flex-row mx-11 xl:mx-0 xl:ml-40">
                     <div class="hero__spec">
                         <img src="/icons/check.svg" alt="" />
-                        <span>Turn tables quicker</span>
+                        <span>{{ $t("index.hero.seatFaster") }}</span>
                     </div>
                     <div class="hero__spec">
                         <img src="/icons/check.svg" alt="" />
-                        <span>Earn more tips</span>
+                        <span>{{ $t("index.hero.earnTips") }}</span>
                     </div>
                     <div class="hero__spec">
                         <img src="/icons/check.svg" alt="" />
-                        <span>Swift secure payment</span>
+                        <span>{{ $t("index.hero.fastPayment") }}</span>
                     </div>
                     <div class="hero__spec">
                         <img src="/icons/check.svg" alt="" />
-                        <span>No app, no registration</span>
+                        <span>{{ $t("index.hero.noApps") }}</span>
                     </div>
                 </div>
             </div>
@@ -47,15 +46,15 @@
         <section class="trusted">
             <div class="trusted__content px-11 lg:px-40 container">
                 <h2 class="trusted__title text-[36px] lg:text-[40px] uppercase">
-                    Trusted by fantastic
+                    {{ $t("index.trusted.recommendedBy") }}
                 </h2>
                 <h2 class="trusted__subtitle text-[36px] lg:text-[40px] uppercase">
-                    restaurants like yours
+                    {{ $t("index.trusted.restaurants") }}
                 </h2>
                 <div class="trusted__carousel">
-                    <carousel :items-to-show="width > 1024 ? 5 : 1">
-                        <slide v-for="slide in 10" :key="slide">
-                            <img src="/index/slider-image.png" alt="" />
+                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"  :wrap-around="true">
+                        <slide v-for="slide in 16" :key="slide">
+                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
                         </slide>
                         <template #addons>
                             <navigation />
@@ -68,9 +67,9 @@
         <!-- DINE IN -->
         <section class="dine-in bg-[url(/index/numbers-bg.png)] bg-cover bg-center">
             <div class="dine-in__content container px-11 xl:px-40 py-20">
-                <h2 class="dine-in__title white-title">give insanely good</h2>
+                <h2 class="dine-in__title white-title">{{ $t("index.give.give") }}</h2>
                 <h2 class="dine-in__subtitle black-title mb-24">
-                    dine-in expreriences
+                    {{ $t("index.give.impressions") }}
                 </h2>
                 <div class="dine-in__list flex flex-col lg:flex-row lg:gap-32">
                     <div class="dine-in__item relative mb-16">
@@ -79,7 +78,7 @@
                             <span class="dine-in__number">16 min</span>
                         </div>
                         <div class="dine-in__description">
-                            Vivamus tincidunt, enim vitae elementum
+                            {{ $t("index.give.save") }}
                         </div>
                     </div>
                     <div class="dine-in__item relative mb-16">
@@ -88,7 +87,7 @@
                             <span class="dine-in__number">300%</span>
                         </div>
                         <div class="dine-in__description">
-                            Vivamus tincidunt, enim vitae elementum
+                            {{ $t("index.give.earn") }}
                         </div>
                     </div>
                     <div class="dine-in__item relative mb-16">
@@ -97,7 +96,7 @@
                             <span class="dine-in__number">7x</span>
                         </div>
                         <div class="dine-in__description">
-                            Vivamus tincidunt, enim vitae elementum
+                            {{ $t("index.give.get") }}
                         </div>
                     </div>
                     <div class="dine-in__item relative mb-4">
@@ -106,7 +105,7 @@
                             <span class="dine-in__number">100%</span>
                         </div>
                         <div class="dine-in__description">
-                            Vivamus tincidunt, enim vitae elementum
+                            {{ $t("index.give.guarantee") }}
                         </div>
                     </div>
                 </div>
@@ -116,32 +115,32 @@
         <!-- PAYMENT -->
         <section class="payment container flex flex-col lg:flex-row px-11 xl:px-40 pt-24">
             <div class="payment__content">
-                <h2 class="payment__title black-title">The payment experience</h2>
+                <h2 class="payment__title black-title">{{ $t("index.payment.experience") }}</h2>
                 <h2 class="payment__subtitle green-title mb-12">
-                    today’s guests are craving
+                    {{ $t("index.payment.crave") }}
                 </h2>
                 <div class="payment__tabs flex flex-wrap lg:flex-nowrap justify-between gap-3 mb-16">
                     <div class="payment__tab">
                         <input v-model="actions" value="scan" type="radio" name="tab" id="scan" />
-                        <label class="w-[132px] lg:w-40" for="scan">scan</label>
+                        <label class="w-[132px] lg:w-40" for="scan">{{ $t("index.payment.actions.scan") }}</label>
                     </div>
                     <div class="payment__tab">
                         <input v-model="actions" value="split" type="radio" name="tab" id="split" />
-                        <label class="w-[132px] lg:w-40" for="split">split</label>
+                        <label class="w-[132px] lg:w-40" for="split">{{ $t("index.payment.actions.split") }}</label>
                     </div>
                     <div class="payment__tab">
                         <input v-model="actions" value="tip" type="radio" name="tab" id="tip" />
-                        <label class="w-[132px] lg:w-40" for="tip">tip</label>
+                        <label class="w-[132px] lg:w-40" for="tip">{{ $t("index.payment.actions.tip") }}</label>
                     </div>
                     <div class="payment__tab">
                         <input v-model="actions" value="pay" type="radio" name="tab" id="pay" />
-                        <label class="w-[132px] lg:w-40" for="pay">pay</label>
+                        <label class="w-[132px] lg:w-40" for="pay">{{ $t("index.payment.actions.pay") }}</label>
                     </div>
                 </div>
                 <p class="payment__text">
                     {{ getExperienceText }}
                 </p>
-                <button class="btn btn-dark payment__btn mb-20">Book a Demo</button>
+                <button class="btn btn-dark payment__btn mb-20">{{ $t('header.bookADemo') }}</button>
             </div>
             <img src="/index/hollow-phone.png" alt="" />
         </section>
@@ -150,11 +149,10 @@
         <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-64 lg:py-96">
             <div class="flexible__content px-11 xl:px-40 flex flex-col md:flex-row justify-between container">
                 <div class="flexible__left flex flex-col justify-center pt-32 md:pt-0">
-                    <h2 class="flexible__title black-title">be flexible</h2>
-                    <h2 class="flexible__subtitle white-title">in accepting payments</h2>
+                    <h2 class="flexible__title black-title">{{ $t('index.flexible.bePrepared') }}</h2>
+                    <h2 class="flexible__subtitle white-title">{{ $t('index.flexible.toAccept') }}</h2>
                     <p class="flexible__text text-xl text-left max-w-[470px] text-white mt-6 mb-16">
-                        There’s an option for every customer. qlub works with the world’s
-                        leading payment partners
+                        {{ $t('index.flexible.customerChoice') }}
                     </p>
                 </div>
                 <div class="flexible__right">
@@ -174,8 +172,8 @@
         <!-- RAVE -->
         <section class="rave mb-40">
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
-                <h2 class="rave__title black-title">Rave about</h2>
-                <h2 class="rave__subtitle green-title mb-16">our faster payments</h2>
+                <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
+                <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>
                 <div class="flex flex-col md:flex-row md:gap-9">
                     <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
                         <div class="rave__top flex gap-7 mb-8">
@@ -210,15 +208,13 @@
         </section>
         <section class="prime">
             <div class="prime__content container px-11 xl:px-40">
-                <h2 class="prime__title black-title">primed and ready</h2>
-                <h3 class="prime__subtitle green-title mb-7">to join your pos team</h3>
-                <p class="prime__text mb-[70px]">qlub is already integrated with top POS systems. You can go live in
-                    less than
-                    48 hours!</p>
+                <h2 class="prime__title black-title">{{ $t('index.primed.primed') }}</h2>
+                <h3 class="prime__subtitle green-title mb-7">{{ $t('index.primed.toJoin') }}</h3>
+                <p class="prime__text mb-[70px]">{{ $t('index.primed.already') }}</p>
                 <div class="prime__carousel bg-[#f8f8f8] shadow-box rounded-[60px] py-12 mb-32">
-                    <carousel :items-to-show="width > 1024 ? 5 : 1">
-                        <slide v-for="slide in 10" :key="slide">
-                            <img src="/index/slider-image.png" alt="" />
+                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"  :wrap-around="true">
+                        <slide v-for="slide in 16" :key="slide">
+                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
                         </slide>
                         <template #addons>
                             <navigation />
@@ -239,18 +235,19 @@ import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 
 const { width } = useWindowSize();
 const actions = ref("scan");
+const {t} = useI18n()
 
 
 const getExperienceText = computed(() => {
     switch (actions.value) {
         case "scan":
-            return "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt reiciendis reprehenderit quae quod aperiam pariatur amet recusandae voluptatum odio?";
+            return t('index.payment.scan');
         case "split":
-            return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit ullam dignissimos omnis culpa, iusto dolores voluptatem quo quibusdam praesentium quos eligendi error ipsam harum consequatur accusantium, id modi, cumque ipsum nemo velit quia voluptate! Repellendus ut illo voluptatibus corrupti.";
+            return t('index.payment.split');
         case "tip":
-            return "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptates?";
+            return t('index.payment.tip');
         case "pay":
-            return "Lorem ipsum dolor sit amet.";
+            return t('index.payment.pay');
     }
 });
 </script>
@@ -315,7 +312,13 @@ const getExperienceText = computed(() => {
         box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.25);
         padding: 50px 0;
     }
+
 }
+
+
+    .carousel__slide {
+        padding: 0 20px;
+    }
 
 .dine-in {
 

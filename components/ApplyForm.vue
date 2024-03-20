@@ -3,9 +3,8 @@
     <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12"/>
     <div class="apply__content px-11 2xl:px-40">
       <form class="apply__form w-full px-4 py-12" @submit="submitForm">
-        <h2 class="green-title mb-6 !text-center">Join YPAY Today!</h2>
+        <h2 class="green-title mb-6 !text-center">{{ $t('applyForm.join') }}</h2>
         <div class="apply__input-group">
-          <label for="">Name&#42</label>
           <input
             v-model="formData.name"
             type="text"
@@ -14,6 +13,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
+            :placeholder="$t('applyForm.name')"
           />
           <small
             class="text-[#990100] text-xs"
@@ -23,7 +23,6 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Email&#42</label>
           <input
             v-model="formData.email"
             type="text"
@@ -32,6 +31,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
+            :placeholder="$t('applyForm.email')"
           />
           <small
             class="text-[#990100] text-xs"
@@ -41,7 +41,6 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Phone&#42</label>
           <input
             v-model="formData.phone"
             type="text"
@@ -50,6 +49,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
+            :placeholder="$t('applyForm.phone')"
           />
           <small
             class="text-[#990100] text-xs"
@@ -59,7 +59,6 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Country&#42</label>
           <input
             v-model="formData.country"
             type="text"
@@ -68,6 +67,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
+            :placeholder="$t('applyForm.country')"
           />
           <small
             class="text-[#990100] text-xs"
@@ -77,7 +77,6 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Name of your restaurant</label>
           <input
             v-model="formData.restaurantName"
             type="text"
@@ -86,6 +85,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
+            :placeholder="$t('applyForm.restaurantName')"
           />
           <small
             class="text-[#990100] text-xs"
@@ -94,9 +94,11 @@
             {{ error.$message }}
           </small>
         </div>
+        <div class="flex justify-center">
         <button type="submit" class="btn btn-dark apply__btn">
-          Book a Demo
+          {{$t('header.bookADemo')}}
         </button>
+        </div>
       </form>
     </div>
   </section>
@@ -158,7 +160,7 @@ const submitForm = async (e: Event) => {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 
     input {
       border-radius: 9px;
@@ -171,7 +173,7 @@ const submitForm = async (e: Event) => {
       font-size: 14px;
       line-height: 29px;
       text-align: left;
-      margin-bottom: 16px;
+      margin-bottom: 4px;
 
       color: #000000;
     }

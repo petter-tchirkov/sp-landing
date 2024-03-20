@@ -4,11 +4,11 @@
     <Header class="!bg-green" />
     <div class="text-center my-24 container">
       <p class="text-center mb-5 text-xl">
-        Here is our contact details worldwide
+        {{$t('contact.here')}}
       </p>
       <div class="px-11 lg:px-40">
-        <h2 class="text-[40px] lg:text-[64px] font-bold uppercase">WANT TO CONTACT</h2>
-        <h2 class="text-[40px] lg:text-[64px] font-bold uppercase text-green mb-12">US DIRECTLY</h2>
+        <h2 class="text-[40px] lg:text-[64px] font-bold uppercase">{{$t('contact.want')}}</h2>
+        <h2 class="text-[40px] lg:text-[64px] font-bold uppercase text-green mb-12">{{$t('contact.us')}}</h2>
       <div class="flex lg:gap-8 flex-wrap">
         <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
           <img src="/contact/de.png" alt="" class="absolute top-0 left-0 w-full">

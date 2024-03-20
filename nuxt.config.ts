@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["@/assets/css/style.scss"],
   modules: [
+    "@nuxtjs/i18n",
     "nuxt-primevue",
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
@@ -17,5 +18,17 @@ export default defineNuxtConfig({
     options: {
       unstyled: true,
     },
+  },
+  i18n: {
+    lazy: true,
+    langDir: "locales",
+    defaultLocale: "en",
+    strategy: "prefix_except_default",
+    locales: [
+      { code: "en", iso: "en-US", file: "en.json", name: "English" },
+      { code: "ua", iso: "uk-UA", file: "ua.json", name: "Українська" },
+      { code: "de", iso: "de-DE", file: "de.json", name: "Deutch" },
+      { code: "es", iso: "es-ES", file: "es.json", name: "Espaniol" },
+    ],
   },
 });

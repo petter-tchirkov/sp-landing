@@ -5,20 +5,20 @@
         :class="isSidebarShown ? 'translate-x-0 flex' : 'translate-x-96 hidden'"
       >
         <ul class="flex flex-col xl:flex-row items-center gap-4">
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/for-restaurants" @click="isSidebarShown = false">
-              For restaurants
-            </NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/about-us" @click="isSidebarShown = false">About us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/contact-us" @click="isSidebarShown = false">Contact us</NuxtLink>
-          </li>
-          <li class="nav__item">
-            <NuxtLink class="nav__link" to="/faqs" @click="isSidebarShown = false">FAQs</NuxtLink>
-          </li>
+          <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" :to="localePath('/for-restaurants')">
+            {{$t('header.forRestaurants')}}
+          </NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" :to="localePath('/about-us')">{{$t('header.aboutUs')}}</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{$t('header.contactUs')}}</NuxtLink>
+        </li>
+        <li class="nav__item text-white text-lg">
+          <NuxtLink class="nav__link" :to="localePath('/faqs')">{{$t('header.faqs')}}</NuxtLink>
+        </li>
         </ul>
         <div class="flex flex-col items-center gap-4">
           <LangSwitcher />
@@ -33,6 +33,7 @@ import { onClickOutside, useWindowSize } from "@vueuse/core";
 const { isSidebarShown } = storeToRefs(useGlobalStore());
 const headerNav = ref();
 const { width } = useWindowSize();
+const localePath = useLocalePath();
 
 onClickOutside(headerNav, () => {
   if (isSidebarShown.value === true) {
