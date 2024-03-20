@@ -35,7 +35,7 @@ onBeforeMount(() => {
       <button class="xl:hidden" @click="isSidebarShown = !isSidebarShown">
         <img src="/burger.svg" alt="" />
       </button>
-      <div class="hidden xl:flex items-center gap-5 mb-2 ml-24">
+      <div class="hidden xl:flex items-center gap-5 mb-2 lg:mb-0 ml-12">
         <LangSwitcher />
         <button class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">Account</button>
         <button class="btn btn-light !text-[#1d9e92]">Book a Demo</button>

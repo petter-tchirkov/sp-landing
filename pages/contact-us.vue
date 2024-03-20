@@ -1,6 +1,6 @@
 <template>
   <div class="pt-20 lg:pt-56">
-    <PreLoader v-if="isLoading"/>
+    <PreLoader />
     <Header class="!bg-green" />
     <div class="text-center my-24 container">
       <p class="text-center mb-5 text-xl">
@@ -50,10 +50,6 @@
 
 <script setup lang="ts">
 
-const { loading } = useGlobalStore()
-const { isLoading } = storeToRefs(useGlobalStore())
-
-await loading()
 </script>
 
 <style scoped lang="scss"></style>

@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper">
-        <PreLoader v-if="isLoading" />
+        <PreLoader />
         <!-- HERO -->
-        <div class="hero bg-[url(/index/hero2.png)] bg-cover bg-center pb-[343px] relative lg:mb-32  pt-20 lg:pt-36">
+        <div class="hero bg-[url(/index/hero2.jpg)] bg-cover bg-center pb-[343px] relative lg:mb-32  pt-20 lg:pt-36">
             <Header />
             <ScrollTop />
             <div class="hero__content container">
@@ -240,10 +240,6 @@ import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 const { width } = useWindowSize();
 const actions = ref("scan");
 
-const { loading } = useGlobalStore()
-const { isLoading } = storeToRefs(useGlobalStore())
-
-await loading()
 
 const getExperienceText = computed(() => {
     switch (actions.value) {

@@ -1,7 +1,7 @@
 <template>
   <div >
     <div class="hero relative bg-cover bg-center">
-        <PreLoader v-if="isLoading" />
+        <PreLoader />
       <Header />
       <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-[236px] lg:pb-[150px]">
         <div class="hero__text flex flex-col w-full pt-28">
@@ -212,10 +212,6 @@ import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 import { useWindowSize } from "@vueuse/core";
 const { width } = useWindowSize();
 
-const { loading } = useGlobalStore()
-const { isLoading } = storeToRefs(useGlobalStore())
-
-await loading()
 </script>
 
 <style scoped lang="scss">

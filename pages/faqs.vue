@@ -1,6 +1,6 @@
 <template>
   <div class="pt-20 lg:pt-32">
-    <PreLoader v-if="isLoading"/>
+    <PreLoader />
     <Header class="!bg-green" />
     <div class="my-24 text-center">
       <h2 class="text-[40px] xl:text-[64px] font-bold leading-8">DID WE MISSED</h2>
@@ -160,10 +160,6 @@
 </template>
 
 <script setup lang="ts">
-const { loading } = useGlobalStore()
-const { isLoading } = storeToRefs(useGlobalStore())
-
-await loading()
 </script>
 
 <style scoped lang="scss">

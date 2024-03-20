@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper pt-20 lg:pt-44">
-    <PreLoader v-if="isLoading"/>
+    <PreLoader />
     <Header class="!bg-green"/>
     <div class="text-center">
       <h2 class="text-[40px] lg:text-[64px] font-bold uppercase mb-6">ABOUT US</h2>
@@ -92,11 +92,6 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core';
 const { width } = useWindowSize();
-
-const { loading } = useGlobalStore()
-const { isLoading } = storeToRefs(useGlobalStore())
-
-await loading()
 </script>
 
 <style scoped lang="scss">

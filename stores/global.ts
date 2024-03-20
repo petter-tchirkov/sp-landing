@@ -4,6 +4,7 @@ export const useGlobalStore = defineStore("global", () => {
   const isSidebarShown = ref(false);
   const isLoading = ref(false);
 
+
   const loading = () => {
     isLoading.value = true;
     setTimeout(() => {
