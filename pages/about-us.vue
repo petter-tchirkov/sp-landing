@@ -1,17 +1,14 @@
 <template>
-  <div class="wrapper pt-20 lg:pt-0">
+  <div class="wrapper pt-20 lg:pt-44">
+    <PreLoader v-if="isLoading"/>
     <Header class="!bg-green"/>
-    <div class="text-center my-24">
+    <div class="text-center">
       <h2 class="text-[40px] lg:text-[64px] font-bold uppercase mb-6">ABOUT US</h2>
-      <p class="text-xl px-11">
-        Imagine guests can view your menu and pay for meals in one split-second
-        scan. Don’t imagine…
-      </p>
     </div>
-    <div class="flex long-text lg:pt-[400px] relative">
-      <img src="/about-us/bg1.png" alt="" class="object-cover absolute -bottom-48 left-0 -z-10 h-[150%] lg:hidden">
-      <div class="m-auto max-w-[1110px] flex flex-col lg:flex-row justify-between gap-14 items-center pb-96">
-        <div class="px-11 pt-16">
+    <div class="flex long-text lg:pt-4 relative bg-[url(/about-us/bg1.png)]" style="background-position: 80%;">
+      <!-- <img src="/about-us/bg1.png" alt="" class="object-cover absolute -bottom-48 left-0 -z-10 h-[150%] lg:hidden"> -->
+      <div class="m-auto flex flex-col lg:flex-row justify-between gap-14 items-center xl:pt-72 pb-96 container xl:px-40">
+        <div class="px-11 xl:px-0">
           <p class="text-white text-lg mb-7">
             If you’re like us, you understand efficiency, speed, and
             convenience. Not only because we’re a 21st-century business that
@@ -60,7 +57,7 @@
         easy as it sounds, but it’s glorious work. We got backed by $17-million
         funding and today, our team is 200+ members strong across the globe.
       </p>
-      <img class="mx-auto mb-16 lg:mb-[200px]" :src="width > 768 ? '/about-us/photos.png' : '/about-us/photos-mob.png'"
+      <img class="mx-auto mb-16 lg:mb-24" :src="width > 768 ? '/about-us/photos.png' : '/about-us/photos-mob.png'"
         alt="" />
       <div
         class="flex flex-col lg:flex-row justify-between mx-auto max-w-[1110px] mb-[200px] px-11 lg:px-0 gap-12 lg:gap-0">
@@ -82,7 +79,7 @@
           <p>Convenience par excellence.</p>
         </div>
       </div>
-      <div class="bg-green py-14 flex flex-col lg:flex-row gap-6 px-11 xl:px-40 mb-20">
+      <div class="bg-green py-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 px-11 xl:px-60 mb-20">
         <span class="text-white text-2xl">Join the qlub right now!</span>
         <button class="btn btn-light">Book a Demo</button>
       </div>
@@ -95,6 +92,11 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core';
 const { width } = useWindowSize();
+
+const { loading } = useGlobalStore()
+const { isLoading } = storeToRefs(useGlobalStore())
+
+await loading()
 </script>
 
 <style scoped lang="scss">

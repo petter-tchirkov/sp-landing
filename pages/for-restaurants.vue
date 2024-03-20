@@ -1,15 +1,16 @@
 <template>
   <div >
     <div class="hero relative bg-cover bg-center">
+        <PreLoader v-if="isLoading" />
       <Header />
       <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-[236px] lg:pb-[150px]">
         <div class="hero__text flex flex-col w-full pt-28">
-          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase  pt-20 lg:pt-0">menu and payment in</h1>
+          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase  pt-20 lg:pt-32">menu and payment in</h1>
           <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">one scan</h2>
           <p class="hero__paragraph">
             Enhance the experience for your customers and staff
           </p>
-          <button class="btn btn-light">Book a Demo</button>
+          <button class="btn btn-light w-auto">Book a Demo</button>
         </div>
       </div>
     </div>
@@ -34,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="how-it-works max-w-[1110px] m-auto mb-[140px] px-11 xl:px-40">
+    <div class="how-it-works container mx-auto !mb-[140px] px-11 xl:px-40">
       <h2 class="uppercase text-[40px] font-bold mb-12">
         HOW <p class="text-green">IT WORKS</p>
       </h2>
@@ -77,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="perfect-host max-w-[1110px] m-auto px-11 xl:px-40">
+    <div class="perfect-host m-auto px-11 xl:px-40 container">
       <h2 class="black-title">
         BE THE PERFECT HOST <span class="green-title">WITH FASTER</span>
       </h2>
@@ -131,7 +132,7 @@
         <img src="/for-restaurants/perfect-host4.png" alt="" />
       </div>
     </div>
-    <div class="integrates mx-auto max-w-[1100px] px-11 xl:px-40">
+    <div class="integrates mx-auto container px-11 xl:px-40">
       <h2 class="uppercase text-[40px] font-bold">INTEGRATES</h2>
       <h2 class="uppercase text-[40px] font-bold mb-6 text-green">
         WITH YOUR POS
@@ -151,7 +152,7 @@
         </carousel>
       </div>
     </div>
-    <div class="go-live pt-48 lg:pb-[250px] lg:pt-[320px] pb-64">
+    <div class="go-live pt-48 lg:pb-[250px] lg:pt-[120px] pb-64">
       <div class="mx-auto max-w-[1110px]">
         <h2 class="text-[40px] uppercase text-center font-bold my-28">
           Go live in less <span class="text-white">than 48 hours!</span>
@@ -210,6 +211,11 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 import { useWindowSize } from "@vueuse/core";
 const { width } = useWindowSize();
+
+const { loading } = useGlobalStore()
+const { isLoading } = storeToRefs(useGlobalStore())
+
+await loading()
 </script>
 
 <style scoped lang="scss">

@@ -3,8 +3,9 @@
     <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12"/>
     <div class="apply__content px-11 2xl:px-40">
       <form class="apply__form w-full px-4 py-12" @submit="submitForm">
+        <h2 class="green-title mb-6 !text-center">Join YPAY Today!</h2>
         <div class="apply__input-group">
-          <label for="">Name</label>
+          <label for="">Name&#42</label>
           <input
             v-model="formData.name"
             type="text"
@@ -22,7 +23,7 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Email</label>
+          <label for="">Email&#42</label>
           <input
             v-model="formData.email"
             type="text"
@@ -40,7 +41,25 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <label for="">Country</label>
+          <label for="">Phone&#42</label>
+          <input
+            v-model="formData.phone"
+            type="text"
+            :class="
+              v$.email.$errors.length
+                ? 'bg-[#990100] bg-opacity-15'
+                : 'bg-[#f3f3f3]'
+            "
+          />
+          <small
+            class="text-[#990100] text-xs"
+            v-for="error in v$.email.$errors"
+          >
+            {{ error.$message }}
+          </small>
+        </div>
+        <div class="apply__input-group">
+          <label for="">Country&#42</label>
           <input
             v-model="formData.country"
             type="text"
@@ -90,6 +109,7 @@ import { required, email, minLength } from "@vuelidate/validators";
 const formData = ref({
   name: "",
   email: "",
+  phone: "",
   country: "",
   restaurantName: "",
 });
@@ -138,7 +158,7 @@ const submitForm = async (e: Event) => {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 26px;
 
     input {
       border-radius: 9px;

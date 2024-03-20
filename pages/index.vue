@@ -1,8 +1,10 @@
 <template>
     <div class="wrapper">
+        <PreLoader v-if="isLoading" />
         <!-- HERO -->
-        <div class="hero bg-[url(/index/hero2.png)] bg-cover bg-center pb-[343px] relative lg:mb-32  pt-20 lg:pt-0">
+        <div class="hero bg-[url(/index/hero2.png)] bg-cover bg-center pb-[343px] relative lg:mb-32  pt-20 lg:pt-36">
             <Header />
+            <ScrollTop />
             <div class="hero__content container">
                 <div class="hero__info flex flex-col lg:flex-row px-11 xl:px-40">
                     <div class="hero__text">
@@ -43,7 +45,7 @@
         <!-- END OF HERO -->
         <!-- TRUSTED -->
         <section class="trusted">
-            <div class="trusted__content px-11 container">
+            <div class="trusted__content px-11 lg:px-40 container">
                 <h2 class="trusted__title text-[36px] lg:text-[40px] uppercase">
                     Trusted by fantastic
                 </h2>
@@ -145,7 +147,7 @@
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
-        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-64 lg:py-96" >
+        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-64 lg:py-96">
             <div class="flexible__content px-11 xl:px-40 flex flex-col md:flex-row justify-between container">
                 <div class="flexible__left flex flex-col justify-center pt-32 md:pt-0">
                     <h2 class="flexible__title black-title">be flexible</h2>
@@ -171,7 +173,7 @@
         <!-- END OF FLEXIBILITY -->
         <!-- RAVE -->
         <section class="rave mb-40">
-            <div class="rave__content px-11 xl:px-40 lg:pt-12">
+            <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">Rave about</h2>
                 <h2 class="rave__subtitle green-title mb-16">our faster payments</h2>
                 <div class="flex flex-col md:flex-row md:gap-9">
@@ -207,7 +209,7 @@
             </div>
         </section>
         <section class="prime">
-            <div class="prime__content px-11 xl:px-40">
+            <div class="prime__content container px-11 xl:px-40">
                 <h2 class="prime__title black-title">primed and ready</h2>
                 <h3 class="prime__subtitle green-title mb-7">to join your pos team</h3>
                 <p class="prime__text mb-[70px]">qlub is already integrated with top POS systems. You can go live in
@@ -237,6 +239,11 @@ import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 
 const { width } = useWindowSize();
 const actions = ref("scan");
+
+const { loading } = useGlobalStore()
+const { isLoading } = storeToRefs(useGlobalStore())
+
+await loading()
 
 const getExperienceText = computed(() => {
     switch (actions.value) {

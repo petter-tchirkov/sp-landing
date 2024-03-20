@@ -22,8 +22,8 @@
             'transition-all',
             'duration-300',
             'py-2',
-            'w-[99%]',
-            'translate-x-[-1.5px]',
+            'w-[103%]',
+            'translate-x-[-1px]',
             state.overlayVisible
               ? 'border border-green border-t-transparent'
               : 'border-none',
@@ -45,8 +45,7 @@
     </template>
     <template #option="{ option }">
       <div class="flex gap-2 items-center text-green">
-        <LanguageIcon :lang="option.code" />
-        <span>{{ option.code }}</span>
+        <LanguageIcon :lang="option.code" class="w-6 h-6"/>
       </div>
     </template>
   </Dropdown>

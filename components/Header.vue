@@ -10,11 +10,11 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 lg:relative z-20 transition"
+  <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
     :class="y > 100 ? 'bg-green' : 'bg-transparent'">
     <div class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto">
       <NuxtLink to="/" class="after:hidden">
-        <img src="/logo.svg" />
+        <img src="/logo.svg" class="w-[160px]"/>
       </NuxtLink>
       <ul class="hidden xl:flex items-center gap-4">
         <li class="nav__item text-white text-lg">
@@ -37,7 +37,7 @@ onBeforeMount(() => {
       </button>
       <div class="hidden xl:flex items-center gap-5 mb-2 ml-24">
         <LangSwitcher />
-        <img src="/user.png" alt="" />
+        <button class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">Account</button>
         <button class="btn btn-light !text-[#1d9e92]">Book a Demo</button>
       </div>
     </div>

@@ -21,17 +21,22 @@
         </li>
       </ul>
       <div class="footer__socials mb-14 xl:mb-0">
-        <img src="/ig.png" alt="" class="w-6 h-6"/>
-        <img src="/fb.png" alt="" class="w-6 h-6"/>
+        <img src="/ig.png" alt="" class="w-6 h-6" />
+        <img src="/fb.png" alt="" class="w-6 h-6" />
       </div>
     </div>
-      <div class="border-t border-t-white py-9">
-        <p class="text-center text-white text-xs font-light">2023 © Fast Technology Holding Limited</p>
-      </div>
+    <div class="border-t border-t-white py-9">
+      <p class="text-center text-white text-xs font-light">
+        2023 © Fast Technology Holding Limited
+      </p>
+    </div>
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const a = ref(4);
+a.value = "5";
+</script>
 
 <style scoped lang="scss">
 .footer {
