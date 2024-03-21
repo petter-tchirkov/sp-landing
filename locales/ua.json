@@ -1,11 +1,11 @@
 {
   "header": {
-    "forRestaurants": "Для ресторанів",
+    "forRestaurants": "Ресторанам",
     "aboutUs": "Про нас",
     "contactUs": "Контакти",
-    "faqs": "Часті запитання",
-    "account": "Особистий кабінет",
-    "bookADemo": "Запишіться на демонстрацію"
+    "faqs": "FAQs",
+    "account": "Аккаунт",
+    "bookADemo": "Демонстрація"
   },
   "applyForm": {
     "name": "Ім'я",

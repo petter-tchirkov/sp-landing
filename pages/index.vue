@@ -213,8 +213,8 @@
                 <p class="prime__text mb-[70px]">{{ $t('index.primed.already') }}</p>
                 <div class="prime__carousel bg-[#f8f8f8] shadow-box rounded-[60px] py-12 mb-32">
                     <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"  :wrap-around="true">
-                        <slide v-for="slide in 16" :key="slide">
-                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
+                        <slide v-for="slide in 6" :key="slide">
+                            <img :src="`/pos/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
                         </slide>
                         <template #addons>
                             <navigation />

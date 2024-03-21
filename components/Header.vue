@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
 const { isSidebarShown } = storeToRefs(useGlobalStore());
-const { x, y } = useWindowScroll();
+const { y } = useWindowScroll();
 const localePath = useLocalePath();
 
 onBeforeMount(() => {
@@ -10,13 +10,9 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <header
-    class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
-    :class="y > 100 ? 'bg-green' : 'bg-transparent'"
-  >
-    <div
-      class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto"
-    >
+  <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
+    :class="y > 100 ? 'bg-green' : 'bg-transparent'">
+    <div class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto">
       <NuxtLink to="/" class="after:hidden">
         <img src="/logo.svg" class="w-[160px]" />
       </NuxtLink>
@@ -27,14 +23,10 @@ onBeforeMount(() => {
           </NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" :to="localePath('/about-us')"
-            >{{ $t('header.aboutUs') }}</NuxtLink
-          >
+          <NuxtLink class="nav__link" :to="localePath('/about-us')">{{ $t('header.aboutUs') }}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" :to="localePath('/contact-us')"
-            >{{ $t('header.contactUs') }}</NuxtLink
-          >
+          <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{ $t('header.contactUs') }}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/faqs')">{{ $t('header.faqs') }}</NuxtLink>
@@ -46,8 +38,7 @@ onBeforeMount(() => {
       <div class="hidden xl:flex items-center gap-5 mb-2 lg:mb-0 ml-12">
         <LangSwitcher />
         <button
-          class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold"
-        >
+          class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
           {{ $t('header.account') }}
         </button>
         <button class="btn btn-light !text-[#1d9e92]">{{ $t('header.bookADemo') }}</button>

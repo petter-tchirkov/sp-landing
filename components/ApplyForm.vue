@@ -13,7 +13,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
-            :placeholder="$t('applyForm.name')"
+            :placeholder="$t('applyForm.name') + '&#42'"
           />
           <small
             class="text-[#990100] text-xs"
@@ -31,7 +31,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
-            :placeholder="$t('applyForm.email')"
+            :placeholder="$t('applyForm.email') + '&#42'"
           />
           <small
             class="text-[#990100] text-xs"
@@ -49,7 +49,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
-            :placeholder="$t('applyForm.phone')"
+            :placeholder="$t('applyForm.phone') + '&#42'"
           />
           <small
             class="text-[#990100] text-xs"
@@ -67,7 +67,7 @@
                 ? 'bg-[#990100] bg-opacity-15'
                 : 'bg-[#f3f3f3]'
             "
-            :placeholder="$t('applyForm.country')"
+            :placeholder="$t('applyForm.country') + '&#42'"
           />
           <small
             class="text-[#990100] text-xs"

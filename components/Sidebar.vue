@@ -23,7 +23,7 @@
         <div class="flex flex-col items-center gap-4">
           <LangSwitcher />
           <img src="/user.png" alt="" class="w-10 h-10" />
-          <button class="btn btn-light !text-[#1d9e92]">Book a Demo</button>
+          <button class="btn btn-light !text-[#1d9e92]">{{ $t('header.bookADemo') }}</button>
         </div>
       </nav>
 </template>
