@@ -52,9 +52,10 @@
                     {{ $t("index.trusted.restaurants") }}
                 </h2>
                 <div class="trusted__carousel">
-                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"  :wrap-around="true">
+                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"
+                        :wrap-around="true">
                         <slide v-for="slide in 16" :key="slide">
-                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
+                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover" />
                         </slide>
                         <template #addons>
                             <navigation />
@@ -75,7 +76,7 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">16 min</span>
+                            <span class="dine-in__number">12 {{ $t('index.give.min') }}</span>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.save") }}
@@ -84,7 +85,7 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">300%</span>
+                            <span class="dine-in__number">340%</span>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.earn") }}
@@ -93,7 +94,8 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">7x</span>
+                            <span class="dine-in__number">{{ locale === 'ua' ? 'У' : '' }} 8 {{ $t('index.give.x')
+                                }}</span>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.get") }}
@@ -174,36 +176,28 @@
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
                 <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>
-                <div class="flex flex-col md:flex-row md:gap-9">
-                    <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
-                        <div class="rave__top flex gap-7 mb-8">
-                            <div class="rave__sphere w-24 h-24 rounded-full bg-[#d9d9d9]"></div>
-                            <div class="rave__name">
-                                <h3 class="text-green uppercase font-bold ">richmond</h3>
-                                <span>Restaurant Manager</span>
+                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="2000">
+                    <slide v-for="review in reviews" :key="review.name">
+                        <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
+                            <div class="rave__top flex gap-7 mb-8">
+                                <div class="rave__sphere w-24 h-24 rounded-full">
+                                    <img class="rounded-full w-full object-cover w-24 h-24" :src="`/reviews/${review.image}.jpeg`"
+                                        alt="">
+                                </div>
+                                <div class="rave__name flex flex-col items-start">
+                                    <h3 class="text-green text-left uppercase font-bold ">{{ review.name }}</h3>
+                                    <span class="!text-left">{{ review.position }}</span>
+                                </div>
+                            </div>
+                            <div class="rave__text !text-left">
+                                <p>{{ review.review }}</p>
                             </div>
                         </div>
-                        <div class="rave__text">
-                            <p>Vivamus tincidunt, enim vitae elementum sagittis, augue metus vestibulum nunc, sit amet
-                                ornare nulla
-                                eros nec nulla.</p>
-                        </div>
-                    </div>
-                    <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box">
-                        <div class="rave__top flex gap-7 mb-8">
-                            <div class="rave__sphere w-24 h-24 rounded-full bg-[#d9d9d9]"></div>
-                            <div class="rave__name">
-                                <h3 class="text-green uppercase font-bold ">richmond</h3>
-                                <span>Restaurant Manager</span>
-                            </div>
-                        </div>
-                        <div class="rave__text">
-                            <p>Vivamus tincidunt, enim vitae elementum sagittis, augue metus vestibulum nunc, sit amet
-                                ornare nulla
-                                eros nec nulla.</p>
-                        </div>
-                    </div>
-                </div>
+                    </slide>
+                    <template #addons>
+                        <navigation />
+                    </template>
+                </carousel>
             </div>
         </section>
         <section class="prime">
@@ -212,9 +206,10 @@
                 <h3 class="prime__subtitle green-title mb-7">{{ $t('index.primed.toJoin') }}</h3>
                 <p class="prime__text mb-[70px]">{{ $t('index.primed.already') }}</p>
                 <div class="prime__carousel bg-[#f8f8f8] shadow-box rounded-[60px] py-12 mb-32">
-                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"  :wrap-around="true">
+                    <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"
+                        :wrap-around="true">
                         <slide v-for="slide in 6" :key="slide">
-                            <img :src="`/pos/${slide}.webp`" alt="" class="w-64 h-28 object-cover"/>
+                            <img :src="`/pos/${slide}.webp`" alt="" class="w-64 h-28 object-cover" />
                         </slide>
                         <template #addons>
                             <navigation />
@@ -231,11 +226,55 @@
 <script setup lang="ts">
 import { useWindowSize } from "@vueuse/core";
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 const { width } = useWindowSize();
+const { locale } = useI18n();
 const actions = ref("scan");
-const {t} = useI18n()
+const { t } = useI18n()
+
+
+const reviews = ref([
+    {
+        name: "Madison Smith",
+        review: "Amazing convenience! With this QR code scanning program, accessing the menu and settling the bill has never been easier. Highly recommended!",
+        position: "Restaurant Manager",
+        image: 1
+    },
+    {
+        name: "Olivia Johnson",
+        review: "Efficient and user-friendly! This QR scanning app makes dining out a breeze. I love how seamlessly it handles payments. A must-have for restaurants!",
+        position: "Sommelier",
+        image: 2
+    },
+    {
+        name: "Emma Williams",
+        review: "Revolutionary dining experience! Thanks to this QR code scanner, I can explore the menu, place orders, and pay without any hassle. It's a game-changer!",
+        position: "Customer",
+        image: 3
+    },
+    {
+        name: "Jackson Miller",
+        review: "Saves time and effort! This app simplifies the dining process by allowing quick access to the menu and enabling easy bill payment through QR code scanning. Love it!",
+        position: "Head Waiter",
+        image: 4
+
+    },
+    {
+        name: "Liam Davis",
+        review: "Innovative and practical! I'm impressed by how smoothly this program integrates QR code scanning for menu access and payment. It's a brilliant solution for modern dining",
+        position: "Customer",
+        image: 5
+
+    },
+    {
+        name: "Noah Wilson",
+        review: "Streamlined dining made possible! With this QR code scanner, I can manage my orders and settle bills swiftly and securely. Dining out has never been this convenient!",
+        position: "Bartender",
+        image: 6
+
+    },
+])
 
 
 const getExperienceText = computed(() => {
@@ -316,9 +355,9 @@ const getExperienceText = computed(() => {
 }
 
 
-    .carousel__slide {
-        padding: 0 20px;
-    }
+.carousel__slide {
+    padding: 0 20px;
+}
 
 .dine-in {
 

@@ -22,7 +22,11 @@
         class="advantages bg-green flex flex-col lg:flex-row gap-5 py-7 rounded-[45px] lg:rounded-full max-w-[1110px] mt-20 mx-auto px-9 justify-between text-white mb-[150px]">
         <div class="flex gap-4">
           <img src="/icons/check-white.svg" alt="" />
-          <span>{{ $t('forR.saveTime') }}</span>
+          <span>{{ $t('forR.fastSync') }}</span>
+        </div>
+        <div class="flex gap-4">
+          <img src="/icons/check-white.svg" alt="" />
+          <span>{{ $t('forR.saveMoney') }}</span>
         </div>
         <div class="flex gap-4">
           <img src="/icons/check-white.svg" alt="" />
@@ -32,10 +36,6 @@
           <img src="/icons/check-white.svg" alt="" />
           <span>{{ $t('forR.earnLoyalty') }}</span>
         </div>
-        <div class="flex gap-4">
-          <img src="/icons/check-white.svg" alt="" />
-          <span>c</span>
-        </div>
       </div>
     </div>
     <div class="how-it-works container mx-auto !mb-[140px] px-11 xl:px-40">
@@ -43,7 +43,7 @@
         {{ $t('forR.how.how') }} <p class="text-green">{{ $t('forR.how.itWorks') }}</p>
       </h2>
       <div class="flex gap-14 flex-col lg:flex-row">
-        <div class="flex flex-col bg-green pt-12 rounded-[17px] hover:shadow-lg transition-all">
+        <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="pl-7">
             <h3 class="font-bold text-2xl">{{ $t('forR.how.sync') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inMin') }}</h3>
@@ -53,7 +53,7 @@
           </div>
           <img src="/for-restaurants/card1.png" alt="" />
         </div>
-        <div class="flex flex-col bg-green pt-12 rounded-[17px] hover:shadow-lg transition-all">
+        <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="pl-7">
             <h3 class="font-bold text-2xl">{{ $t('forR.how.setup') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inMinutes') }}</h3>
@@ -63,7 +63,7 @@
           </div>
           <img src="/for-restaurants/card2.png" alt="" />
         </div>
-        <div class="flex flex-col bg-green pt-12 rounded-[17px] hover:shadow-lg transition-all">
+        <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="pl-7">
             <h3 class="font-bold text-2xl">{{ $t('forR.how.collect') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inSec') }}</h3>
@@ -82,7 +82,7 @@
       <h2 class="green-title mb-16">{{ $t('forR.perfectHost.checkins') }}</h2>
       <div class="flex flex-col lg:flex-row  items-center justify-between mb-[90px]">
         <div class="flex flex-col">
-          <h3 class="text-white bg-green rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
+          <h3 class="text-white bg-green uppercase rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
             {{ $t('forR.perfectHost.qr') }}
           </h3>
           <p class="text-xl max-w-96 mb-12">
@@ -93,7 +93,7 @@
       </div>
       <div class="flex flex-col lg:flex-row-reverse  items-center justify-between mb-[90px] lg:gap-32">
         <div class="flex flex-col">
-          <h3 class="text-white bg-green rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
+          <h3 class="text-white bg-green uppercase rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
             {{ $t('forR.perfectHost.ci') }}
           </h3>
           <p class="text-xl max-w-96 mb-12">
@@ -104,7 +104,7 @@
       </div>
       <div class="flex flex-col lg:flex-row  items-center justify-between mb-[90px] lg:gap-32">
         <div class="flex flex-col">
-          <h3 class="text-white bg-green rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
+          <h3 class="text-white uppercase bg-green rounded-full text-2xl font-bold px-8 py-2 mb-12 w-fit">
             {{ $t('forR.perfectHost.noApp') }}
           </h3>
           <p class="text-xl max-w-96 mb-12">
@@ -147,7 +147,7 @@
     <div class="go-live pt-48 lg:pb-[250px] lg:pt-[120px] pb-64">
       <div class="mx-auto max-w-[1110px]">
         <h2 class="text-[40px] uppercase text-center font-bold my-28">
-          {{ $t('forR.goLive.go') }} <span class="text-white">{{ $t('forR.goLive.than48') }}</span>
+          {{ $t('forR.goLive.go') }}<br /> <span class="text-white">{{ $t('forR.goLive.than48') }}</span>
         </h2>
         <div class="grid-cols-1 lg:grid-cols-2 justify-between max-w-[886px] m-auto gap-24 grid">
           <div class="max-w-[350px]">

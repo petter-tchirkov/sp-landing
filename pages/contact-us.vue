@@ -4,42 +4,49 @@
     <ScrollTop />
     <Header class="!bg-green" />
     <div class="text-center my-24 container">
-      <p class="text-center mb-5 text-xl">
-        {{ $t('contact.here') }}
-      </p>
       <div class="px-11 lg:px-40">
         <h2 class="text-[40px] lg:text-[64px] font-bold uppercase">{{ $t('contact.want') }}</h2>
         <h2 class="text-[40px] lg:text-[64px] font-bold uppercase text-green mb-12">{{ $t('contact.us') }}</h2>
         <div class="flex lg:gap-8 flex-wrap">
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/de.png" alt="" class="absolute top-0 left-0 w-full">
-            <h3 class="text-xl uppercase text-left pl-9 pt-14">Headquarters</h3>
-            <p class="text-left pl-9">info@qlub.io</p>
-            <p class="text-left pl-9">+971-585930692</p>
+            <img src="/contact/de.png" alt="" class="top-0 left-0 w-full">
+            <div class="absolute bottom-1/2">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+              <p class="text-left pl-9">+971-585930692</p>
+            </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/ua.png" alt="" class="absolute top-0 left-0 w-full">
-            <h3 class="text-xl uppercase text-left pl-9 pt-14">Headquarters</h3>
-            <p class="text-left pl-9">info@qlub.io</p>
-            <p class="text-left pl-9">+971-585930692</p>
+            <img src="/contact/ua.png" alt="" class="top-0 left-0 w-full">
+            <div class="absolute bottom-1/2">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14">Ukraine</h3>
+              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+              <p class="text-left pl-9">+971-585930692</p>
+            </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/es.png" alt="" class="absolute top-0 left-0 w-full">
-            <h3 class="text-xl uppercase text-left pl-9 pt-14">Headquarters</h3>
-            <p class="text-left pl-9">info@qlub.io</p>
-            <p class="text-left pl-9">+971-585930692</p>
+            <img src="/contact/es.png" alt="" class="top-0 left-0 w-full">
+            <div class="absolute bottom-1/2">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14">Spain</h3>
+              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+              <p class="text-left pl-9">+971-585930692</p>
+            </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/pl.png" alt="" class="absolute top-0 left-0 w-full">
-            <h3 class="text-xl uppercase text-left pl-9 pt-14">Headquarters</h3>
-            <p class="text-left pl-9">info@qlub.io</p>
-            <p class="text-left pl-9">+971-585930692</p>
+            <img src="/contact/pl.png" alt="" class="top-0 left-0 w-full">
+            <div class="absolute bottom-1/2">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14">Poland</h3>
+              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+              <p class="text-left pl-9">+971-585930692</p>
+            </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/uae.png" alt="" class="absolute top-0 left-0 w-full">
-            <h3 class="text-xl uppercase text-left pl-9 pt-14">Headquarters</h3>
-            <p class="text-left pl-9">info@qlub.io</p>
-            <p class="text-left pl-9">+971-585930692</p>
+            <img src="/contact/uae.png" alt="" class="top-0 left-0 w-full">
+            <div class="absolute bottom-1/2">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14">United Arab Emirates</h3>
+              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+              <p class="text-left pl-9">+971-585930692</p>
+            </div>
           </div>
         </div>
       </div>

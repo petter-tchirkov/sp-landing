@@ -1,15 +1,15 @@
 <template>
-  <div class="wrapper pt-20 lg:pt-44">
+  <div class="wrapper pt-36 lg:pt-44">
     <PreLoader />
     <ScrollTop />
     <Header class="!bg-green" />
     <div class="text-center">
       <h2 class="text-[40px] lg:text-[64px] font-bold uppercase mb-6">{{ $t('about.aboutUs') }}</h2>
     </div>
-    <div class="flex long-text lg:pt-4 relative bg-[url(/about-us/bg1.png)]" style="background-position: 80%;">
-      <!-- <img src="/about-us/bg1.png" alt="" class="object-cover absolute -bottom-48 left-0 -z-10 h-[150%] lg:hidden"> -->
+    <div class="flex long-text lg:pt-4 relative bg-green 2xl:bg-[url(/about-us/bg1.png)]"
+      style="background-position: 80%;">
       <div
-        class="m-auto flex flex-col lg:flex-row justify-between gap-14 items-center xl:pt-72 pb-96 container xl:px-40">
+        class="m-auto flex flex-col lg:flex-row justify-between gap-14 items-center xl:pt-72 xl:pb-96 container xl:px-40 py-10 xl:py-0">
         <div class="px-11 xl:px-0">
           <p class="text-white text-lg mb-7">
             {{ $t('about.ourP') }}
@@ -24,7 +24,7 @@
         <img class="px-11" src="/about-us/1.png" alt="" />
       </div>
     </div>
-    <div class="map m-auto max-w-[1110px] px-11 lg:px-0">
+    <div class="map m-auto max-w-[1110px] px-11 lg:px-0 mt-16 xl:mt-0">
       <h2
         class="bg-green px-[38px] py-9 lg:py-2 rounded-[33px] lg:rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto">
         {{ $t('about.over') }}
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div
-        class="bg-green py-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 px-11 xl:px-60 mb-20">
+        class="bg-green py-14 flex flex-col lg:flex-row lg:items-center lg:justify-around gap-6 px-11 xl:px-60 mb-20">
         <span class="text-white text-2xl">{{ $t('applyForm.join') }}</span>
         <button class="btn btn-light">{{ $t('header.bookADemo') }}</button>
       </div>

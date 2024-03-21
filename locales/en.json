@@ -13,7 +13,7 @@
     "phone": "Phone number",
     "country": "Country/Region",
     "restaurantName": "Name of your restaurant",
-    "join": "Join YPAY today!" 
+    "join": "Join YPAY today!"
   },
   "index": {
     "hero": {
@@ -35,7 +35,9 @@
       "save": "Save 12 minutes per table",
       "earn": "Earn 340% more tips",
       "get": "Get 8 times more positive Google reviews",
-      "guarantee": "Guarantee 100% customer satisfaction"
+      "guarantee": "Guarantee 100% customer satisfaction",
+      "min": "min",
+      "x": "x"
     },
     "payment": {
       "actions": {

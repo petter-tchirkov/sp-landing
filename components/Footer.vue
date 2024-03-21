@@ -7,17 +7,17 @@
       <ul class="flex flex-col xl:flex-row xl:items-center gap-9 mb-9 xl:mb-0">
         <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/for-restaurants')">
-            {{$t('header.forRestaurants')}}
+            {{ $t('header.forRestaurants') }}
           </NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" :to="localePath('/about-us')">{{$t('header.aboutUs')}}</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/about-us')">{{ $t('header.aboutUs') }}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{$t('header.contactUs')}}</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{ $t('header.contactUs') }}</NuxtLink>
         </li>
         <li class="nav__item text-white text-lg">
-          <NuxtLink class="nav__link" :to="localePath('/faqs')">{{$t('header.faqs')}}</NuxtLink>
+          <NuxtLink class="nav__link" :to="localePath('/faqs')">{{ $t('header.faqs') }}</NuxtLink>
         </li>
       </ul>
       <div class="footer__socials mb-14 xl:mb-0">
@@ -27,7 +27,7 @@
     </div>
     <div class="border-t border-t-white py-9">
       <p class="text-center text-white text-xs font-light">
-        2023 © Fast Technology Holding Limited
+        Website created by WebPixel © 2024
       </p>
     </div>
   </footer>
