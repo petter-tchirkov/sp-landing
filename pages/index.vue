@@ -147,7 +147,7 @@
                     {{ $t('header.bookADemo') }}
                 </button>
             </div>
-            <img src="/index/hollow-phone.png" alt="" />
+            <img src="/index/hollow-phone.png" class="w-[230px] ml-32 rounded-xl" alt="" />
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
