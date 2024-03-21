@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["@/assets/css/style.scss"],
+  app: {
+    head: {
+      title: "Y-PAY",
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.svg" }],
+    },
+  },
   modules: [
     "@nuxtjs/i18n",
     "nuxt-primevue",

@@ -13,7 +13,8 @@
     "phone": "Phone",
     "country": "Land",
     "restaurantName": "Name Ihres Restaurants",
-    "join": "Treten Sie YPAY noch heute bei!"
+    "join": "Treten Sie YPAY noch",
+    "today": "heute bei!"
   },
   "index": {
     "hero": {

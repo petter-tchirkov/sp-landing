@@ -5,7 +5,7 @@
       <ScrollTop />
       <Header />
       <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-[236px] lg:pb-[150px]">
-        <div class="hero__text flex flex-col w-full pt-28">
+        <div class="hero__text flex flex-col w-full pt-28 !max-w-full">
           <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-20 lg:pt-32">{{ $t('forR.one') }}
           </h1>
           <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
@@ -13,7 +13,7 @@
           <p class="hero__paragraph">
             {{ $t('forR.fastSync') }}
           </p>
-          <button class="btn btn-light w-auto" @click="scrollToForm">{{ $t('header.bookADemo') }}</button>
+          <button class="btn btn-light w-fit" @click="scrollToForm">{{ $t('header.bookADemo') }}</button>
         </div>
       </div>
     </div>

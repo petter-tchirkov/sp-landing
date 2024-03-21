@@ -179,7 +179,7 @@
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
                 <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>
-                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="200">
+                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="200" class="py-4">
                     <slide v-for="review in reviews" :key="review.name">
                         <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
                             <div class="rave__top flex gap-7 mb-8">

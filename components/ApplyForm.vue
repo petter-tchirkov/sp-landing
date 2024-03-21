@@ -3,9 +3,10 @@
     <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12" />
     <div class="apply__content px-11 2xl:px-40">
       <form class="apply__form w-full px-4 py-12" @submit="submitForm">
-        <h2 class="green-title mb-6 !text-center" :class="{ '!text-xl !xl:text-[40px]': locale === 'ua' }">{{
+        <h2 class="green-title !text-center">{{
       $t('applyForm.join') }}
         </h2>
+        <h3 class="black-title mb-6 !text-center">{{ $t('applyForm.today') }}</h3>
         <div class="apply__input-group">
           <input v-model="formData.name" type="text" :class="v$.name.$errors.length
       ? 'bg-[#990100] bg-opacity-15'
