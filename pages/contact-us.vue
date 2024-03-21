@@ -11,36 +11,36 @@
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
             <img src="/contact/de.png" alt="" class="top-0 left-0 w-full">
             <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2">Germany</h3>
+              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Germany</h3>
               <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
             <img src="/contact/ua.png" alt="" class="top-0 left-0 w-full">
             <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2">Ukraine</h3>
+              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Ukraine</h3>
               <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
             <img src="/contact/es.png" alt="" class="top-0 left-0 w-full">
             <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2">Spain</h3>
+              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Spain</h3>
               <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
             <img src="/contact/pl.png" alt="" class="top-0 left-0 w-full">
             <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2">Poland</h3>
+              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Poland</h3>
               <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-28 lg:min-w-[350px] w-full lg:w-auto">
             <img src="/contact/uae.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2">United Arab Emirates</h3>
-              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+            <div class="absolute bottom-1/2 !text-left">
+              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">United Arab Emirates</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left pl-9">info@yumaxpay.com</a>
             </div>
           </div>
         </div>

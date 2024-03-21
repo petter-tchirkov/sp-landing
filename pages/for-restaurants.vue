@@ -44,8 +44,8 @@
       </h2>
       <div class="flex gap-14 flex-col lg:flex-row">
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
-          <div class="pl-7">
-            <h3 class="font-bold text-2xl w-full max-w-[140px]">{{ $t('forR.how.sync') }}</h3>
+          <div class="pl-7 flex flex-col justify-between">
+            <h3 class="font-bold text-2xl w-full max-w-[270px]">{{ $t('forR.how.sync') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inMin') }}</h3>
             <p class="text-white mb-10 max-w-[250px]">
               {{ $t('forR.how.syncText') }}
@@ -54,7 +54,7 @@
           <img src="/for-restaurants/card1.png" alt="" />
         </div>
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
-          <div class="pl-7">
+          <div class="pl-7 flex flex-col justify-between">
             <h3 class="font-bold text-2xl">{{ $t('forR.how.setup') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inMinutes') }}</h3>
             <p class="text-white mb-10 max-w-[250px]">
@@ -64,7 +64,7 @@
           <img src="/for-restaurants/card2.png" alt="" />
         </div>
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
-          <div class="pl-7">
+          <div class="px-7 flex flex-col justify-between">
             <h3 class="font-bold text-2xl">{{ $t('forR.how.collect') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inSec') }}</h3>
             <p class="text-white mb-10 max-w-[250px]">
