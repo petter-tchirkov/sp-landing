@@ -6,14 +6,14 @@
       <Header />
       <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-[236px] lg:pb-[150px]">
         <div class="hero__text flex flex-col w-full pt-28">
-          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase  pt-20 lg:pt-32">{{ $t('forR.one') }}
+          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-20 lg:pt-32">{{ $t('forR.one') }}
           </h1>
           <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
             {{ $t('forR.forBoth') }}</h2>
           <p class="hero__paragraph">
             {{ $t('forR.fastSync') }}
           </p>
-          <button class="btn btn-light w-auto">{{ $t('header.bookADemo') }}</button>
+          <button class="btn btn-light w-auto" @click="scrollToForm">{{ $t('header.bookADemo') }}</button>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="flex gap-4">
           <img src="/icons/check-white.svg" alt="" />
-          <span>{{ $t('forR.saveMoney') }}</span>
+          <span>{{ $t('forR.saveTime') }}</span>
         </div>
         <div class="flex gap-4">
           <img src="/icons/check-white.svg" alt="" />
@@ -45,7 +45,7 @@
       <div class="flex gap-14 flex-col lg:flex-row">
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="pl-7">
-            <h3 class="font-bold text-2xl">{{ $t('forR.how.sync') }}</h3>
+            <h3 class="font-bold text-2xl w-full max-w-[140px]">{{ $t('forR.how.sync') }}</h3>
             <h3 class="font-bold text-white mb-7">{{ $t('forR.how.inMin') }}</h3>
             <p class="text-white mb-10 max-w-[250px]">
               {{ $t('forR.how.syncText') }}
@@ -196,9 +196,17 @@
 
 <script setup lang="ts">
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 import { useWindowSize } from "@vueuse/core";
 const { width } = useWindowSize();
+
+const scrollToForm = () => {
+  const form = document.getElementById("apply");
+  if (form) {
+    form.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 
 </script>
 
@@ -236,7 +244,8 @@ const { width } = useWindowSize();
 
 @media screen and (min-width: 1024px) {
   .hero {
-    background-position: 10%;
+    background-position: 60% top;
+    background-size: cover;
   }
 }
 </style>

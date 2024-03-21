@@ -11,13 +11,14 @@
                         <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase">
                             {{ $t("index.hero.payForYourMeal") }}
                         </h1>
-                        <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
+                        <h2 class="hero__subtitle text-[40px] lg:text-[64px] font-bold uppercase text-white mb-7">
                             {{ $t("index.hero.fast") }}
                         </h2>
                         <p class="hero__description">
                             {{ $t("index.hero.imagineGuests") }}
                         </p>
-                        <button class="hero__btn btn btn-light">{{ $t("header.bookADemo") }}</button>
+                        <button class="hero__btn btn btn-light" @click="scrollToForm">{{ $t("header.bookADemo")
+                            }}</button>
                     </div>
                     <img src="/index/qr.png" alt="" />
                 </div>
@@ -142,7 +143,9 @@
                 <p class="payment__text">
                     {{ getExperienceText }}
                 </p>
-                <button class="btn btn-dark payment__btn mb-20">{{ $t('header.bookADemo') }}</button>
+                <button class="btn btn-dark payment__btn mb-20" @click="scrollToForm">
+                    {{ $t('header.bookADemo') }}
+                </button>
             </div>
             <img src="/index/hollow-phone.png" alt="" />
         </section>
@@ -176,13 +179,13 @@
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
                 <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>
-                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="2000">
+                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="200">
                     <slide v-for="review in reviews" :key="review.name">
                         <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
                             <div class="rave__top flex gap-7 mb-8">
                                 <div class="rave__sphere w-24 h-24 rounded-full">
-                                    <img class="rounded-full w-full object-cover w-24 h-24" :src="`/reviews/${review.image}.jpeg`"
-                                        alt="">
+                                    <img class="rounded-full w-full object-cover w-24 h-24"
+                                        :src="`/reviews/${review.image}.jpeg`" alt="">
                                 </div>
                                 <div class="rave__name flex flex-col items-start">
                                     <h3 class="text-green text-left uppercase font-bold ">{{ review.name }}</h3>
@@ -233,6 +236,14 @@ const { locale } = useI18n();
 const actions = ref("scan");
 const { t } = useI18n()
 
+const scrollToForm = () => {
+    const form = document.getElementById("apply");
+    if (form) {
+        form.scrollIntoView({ behavior: "smooth" });
+    }
+};
+
+
 
 const reviews = ref([
     {
@@ -255,14 +266,14 @@ const reviews = ref([
     },
     {
         name: "Jackson Miller",
-        review: "Saves time and effort! This app simplifies the dining process by allowing quick access to the menu and enabling easy bill payment through QR code scanning. Love it!",
+        review: "Saves time and effort! This app simplifies the dining process by allowing quick access to the menu and easy bill payment through QR code scanning. Love it!",
         position: "Head Waiter",
         image: 4
 
     },
     {
         name: "Liam Davis",
-        review: "Innovative and practical! I'm impressed by how smoothly this program integrates QR code scanning for menu access and payment. It's a brilliant solution for modern dining",
+        review: "Innovative and practical! I'm impressed by how smoothly this program integrates QR code for menu access and payment. It's a brilliant solution for modern dining",
         position: "Customer",
         image: 5
 

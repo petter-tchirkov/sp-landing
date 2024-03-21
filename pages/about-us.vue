@@ -55,13 +55,13 @@
             {{ $t('about.noMore') }}
           </p>
         </div>
-        <div class="flex gap-4 max-w-[240px] items-start">
+        <div class="flex gap-4 max-w-[300px] items-start">
           <img src="/icons/check.svg" alt="" />
           <p>
             {{ $t('about.noMore2') }}
           </p>
         </div>
-        <div class="flex gap-4 max-w-[160px] items-start">
+        <div class="flex gap-4 max-w-[300px] items-start">
           <img src="/icons/check.svg" alt="" />
           <p>{{ $t('about.flawless') }}</p>
         </div>
@@ -69,7 +69,7 @@
       <div
         class="bg-green py-14 flex flex-col lg:flex-row lg:items-center lg:justify-around gap-6 px-11 xl:px-60 mb-20">
         <span class="text-white text-2xl">{{ $t('applyForm.join') }}</span>
-        <button class="btn btn-light">{{ $t('header.bookADemo') }}</button>
+        <button @click="scrollToForm" class="btn btn-light">{{ $t('header.bookADemo') }}</button>
       </div>
       <ApplyForm src="/index/customer.png" />
       <Footer />
@@ -80,6 +80,13 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core';
 const { width } = useWindowSize();
+const scrollToForm = () => {
+  const form = document.getElementById("apply");
+  if (form) {
+    form.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 </script>
 
 <style scoped lang="scss">
