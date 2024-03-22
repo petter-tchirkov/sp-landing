@@ -1,11 +1,11 @@
 {
   "header": {
-    "forRestaurants": "Para restaurantes",
-    "aboutUs": "Acerca de nosotros",
-    "contactUs": "Contáctenos",
-    "faqs": "Preguntas frecuentes",
-    "account": "Cuenta personal",
-    "bookADemo": "Agende una demostración"
+    "forRestaurants": "Restaurantes",
+    "aboutUs": "Somos",
+    "contactUs": "Contacto",
+    "faqs": "FAQs",
+    "account": "Cuenta",
+    "bookADemo": "Demostración"
   },
   "applyForm": {
     "name": "Nombre",

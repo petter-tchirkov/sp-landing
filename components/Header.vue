@@ -3,10 +3,20 @@ import { useWindowScroll } from "@vueuse/core";
 const { isSidebarShown } = storeToRefs(useGlobalStore());
 const { y } = useWindowScroll();
 const localePath = useLocalePath();
+const route = useRoute()
+const router = useRouter();
 
 onBeforeMount(() => {
   y.value = 0;
 });
+
+const reloadPage = () => {
+  if (route.path === localePath("/")) {
+    location.reload();
+  } else {
+    router.push(localePath("/"));
+  }
+};
 
 const scrollToForm = () => {
   const form = document.getElementById("apply");
@@ -20,7 +30,7 @@ const scrollToForm = () => {
   <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
     :class="y > 100 ? 'bg-green' : 'bg-transparent'">
     <div class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto">
-      <NuxtLink :to="localePath('/')" class="after:hidden">
+      <NuxtLink @click="reloadPage" class="after:hidden">
         <img src="/logo.svg" class="w-[160px]" />
       </NuxtLink>
       <ul class="hidden xl:flex items-center gap-4">

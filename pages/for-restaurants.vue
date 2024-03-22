@@ -20,7 +20,7 @@
     <div class="px-11 xl:px-40">
       <div
         class="advantages bg-green flex flex-col lg:flex-row gap-5 py-7 rounded-[45px] lg:rounded-full max-w-[1110px] mt-20 mx-auto px-9 justify-between text-white mb-[150px]">
-        <div class="flex gap-4">
+        <div class="flex gap-4 max-w-[350px]">
           <img src="/icons/check-white.svg" alt="" />
           <span>{{ $t('forR.fastSync') }}</span>
         </div>
@@ -133,7 +133,8 @@
       <p class="text-xl max-w-[445px] mb-14">
         {{ $t('forR.primed.already') }}
       </p>
-      <div class="bg-green py-12 rounded-[59px] mb-[187px]" style="box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.25)">
+      <div class="bg-green py-12 rounded-[59px] mb-16 xl:mb-[187px]"
+        style="box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.25)">
         <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200" :wrap-around="true">
           <slide v-for="slide in 16" :key="slide">
             <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover" />
@@ -146,13 +147,13 @@
     </div>
     <div class="go-live pt-48 lg:pb-[250px] lg:pt-[120px] pb-64">
       <div class="mx-auto max-w-[1110px]">
-        <h2 class="text-[40px] uppercase text-center font-bold my-28">
+        <h2 class="text-[40px] uppercase text-center font-bold my-28 px-11 xl:px-0">
           {{ $t('forR.goLive.go') }}<br /> <span class="text-white">{{ $t('forR.goLive.than48') }}</span>
         </h2>
         <div class="grid-cols-1 lg:grid-cols-2 justify-between max-w-[886px] m-auto gap-24 grid">
           <div class="max-w-[350px]">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-6 lg:translate-x-0">
+              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               1. {{ $t('forR.goLive.youReach') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">
@@ -161,7 +162,7 @@
           </div>
           <div class="max-w-[350px] lg:justify-self-end ">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-6 lg:translate-x-0">
+              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               2. {{ $t('forR.goLive.weGen') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">
@@ -170,7 +171,7 @@
           </div>
           <div class="max-w-[350px] ">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-6 lg:translate-x-0">
+              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               3. {{ $t('forR.goLive.train') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">
@@ -179,7 +180,7 @@
           </div>
           <div class="max-w-[350px]  lg:justify-self-end">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-6 lg:translate-x-0">
+              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               4. {{ $t('forR.goLive.accept') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">
@@ -233,7 +234,8 @@ const scrollToForm = () => {
 
 @media screen and (max-width: 1024px) {
   .hero {
-    background-position: 70% 100%;
+    background-position: 70% top;
+    background-repeat: no-repeat
   }
 
   .go-live {

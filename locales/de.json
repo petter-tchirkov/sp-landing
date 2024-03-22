@@ -1,11 +1,11 @@
 {
   "header": {
-    "forRestaurants": "Für Restaurants",
+    "forRestaurants": "Gaststätten",
     "aboutUs": "Über uns",
-    "contactUs": "Kontaktieren Sie uns",
-    "faqs": "Häufig gestellte Fragen (FAQs)",
-    "account": "Persönliches Konto",
-    "bookADemo": "Buchen Sie eine Vorführung"
+    "contactUs": "Kontakt",
+    "faqs": "FAQs",
+    "account": "Konto",
+    "bookADemo": "Demo"
   },
   "applyForm": {
     "name": "Name",

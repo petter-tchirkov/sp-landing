@@ -13,7 +13,7 @@
     "phone": "Phone number",
     "country": "Country/Region",
     "restaurantName": "Name of your restaurant",
-    "join": "Join YPAY",
+    "join": "Join Y-PAY",
     "today": "today!"
   },
   "index": {
@@ -57,7 +57,7 @@
     "flexible": {
       "bePrepared": "Be prepared",
       "toAccept": "to accept various payment methods.",
-      "customerChoice": "Every customer has a choice. YPAY collaborates with leading global payment partners."
+      "customerChoice": "Every customer has a choice. Y-PAY collaborates with leading global payment partners."
     },
     "rave": {
       "countries": "1000+ restaurants in 5 countries rave about",
@@ -66,12 +66,12 @@
     "primed": {
       "primed": "Primed and ready",
       "toJoin": "to join your POS team.",
-      "already": "YPAY is already integrated with leading POS systems. You can launch the system in less than 48 hours!"
+      "already": "Y-PAY is already integrated with leading POS systems. You can launch the system in less than 48 hours!"
     }
   },
   "forR": {
-    "one": "one scan -",
-    "forBoth": "for both selecting dishes and payment, for the convenience of both customers and staff",
+    "one": "selecting dishes and payment",
+    "forBoth": "one scan",
     "fastSync": "Fast synchronization with your POS system",
     "saveTime": "Save time",
     "saveMoney": "Save money",
@@ -94,18 +94,18 @@
       "withQuicker": "with quicker",
       "checkins": "check-ins and checkouts.",
       "qr": "QR codes",
-      "qrText": "YPAY provides individual, unique QR codes for each table, helping your staff to better track payments.",
+      "qrText": "Y-PAY provides individual, unique QR codes for each table, helping your staff to better track payments.",
       "ci": "Continuous integration",
-      "ciText": "YPAY syncs directly with your point of sale system without changing how you run your business.",
+      "ciText": "Y-PAY syncs directly with your point of sale system without changing how you run your business.",
       "noApp": "No app",
-      "noAppText": "Your customers don't need to download any app. YPAY is a web-based payment service that works on all web browsers.",
+      "noAppText": "Your customers don't need to download any app. Y-PAY is a web-based payment service that works on all web browsers.",
       "rtd": "Real-time data",
       "rtdText": "Completed transactions are instantly reflected on your dashboard. And you can access it from any device."
     },
     "primed": {
       "primed": "Primed and ready",
       "toJoin": "to join your POS team",
-      "already": "YPAY is already integrated with leading POS systems. You can launch the system in less than 48 hours!"
+      "already": "Y-PAY is already integrated with leading POS systems. You can launch the system in less than 48 hours!"
     },
     "goLive": {
       "go": "go live in less",
@@ -115,7 +115,7 @@
       "weGen": "We generate QR codes",
       "weGenText": "They are unique to each table and your brand, so you can keep track of bills and payments.",
       "train": "We are training your personnel",
-      "trainText": "We will show your staff how to use YPAY, and they will be fully ready in 15 minutes.",
+      "trainText": "We will show your staff how to use Y-PAY, and they will be fully ready in 15 minutes.",
       "accept": "You accept payments",
       "acceptText": "Now you're ready to focus on creating an incredible dining experience"
     }
@@ -125,7 +125,7 @@
     "ourP": "Our program is the perfect way to streamline the ordering and payment process at your favorite establishment. Using QR codes, you can easily place and pay for your order without leaving your table. Simply scan the QR code located on your table or in the menu using our app, and gain access to the full list of dishes and beverages",
     "once": "Once you've selected your favorite items, you can place your order directly from your smartphone. Additionally, our program allows you to add any special requests or clarifications to your order. When you're finished, just select the payment option and pay for your order directly through the app",
     "quick": "It's quick, convenient, and secure – you can enjoy your lunch or dinner without wasting time waiting for service or processing payment. Our program is designed for your comfort and satisfaction, making your stay at the establishment as enjoyable as possible",
-    "over": "Today, over 1000 restaurants are partnered with YPAY",
+    "over": "Today, over 1000 restaurants are partnered with Y-PAY",
     "countries": "In the United Arab Emirates, Poland, Germany, Ukraine, and Spain. We are global! We call them our partners because we collaborate with them to provide their customers with a fast, seamless ordering experience.",
     "who": {
       "who": "Who we are",
@@ -144,24 +144,24 @@
   "faqs": {
     "did": "did we miss",
     "anything": "anything?",
-    "what": "What is YPAY?",
-    "whatText": "YPAY - is a payment system specifically designed for use in table-service restaurants. This system enables customers to easily and conveniently settle their bills without the need to wait for a waiter. Customers can use their mobile phones to view the bill, split it, specify the tip amount, and make the payment. This makes the payment process more convenient and faster for both customers and restaurants",
+    "what": "What is Y-PAY?",
+    "whatText": "Y-PAY - is a payment system specifically designed for use in table-service restaurants. This system enables customers to easily and conveniently settle their bills without the need to wait for a waiter. Customers can use their mobile phones to view the bill, split it, specify the tip amount, and make the payment. This makes the payment process more convenient and faster for both customers and restaurants",
     "how": "How do I know that customers have paid?",
     "howText": "After payment, the order is automatically and instantly closed at your checkout",
-    "do": "Do customers need an app to use YPAY?",
+    "do": "Do customers need an app to use Y-PAY?",
     "doText": "No, you just click and go to the webpage in your browser, no downloads or registration required",
     "doYou": "Do you integrate with trading systems?",
     "doYouText": "We integrate with any POS system in 48 hours",
-    "whatAre": "What are the benefits of YPAY?",
+    "whatAre": "What are the benefits of Y-PAY?",
     "whatAreText": "Better customer experience, 3-5 minutes faster turnover, twice as many tips",
     "howLong": "How long does it take to set up?",
-    "howLongText": "Getting started with YPAY is a snap! After signing the contract, it will take us only 24 hours to get your restaurant up and running with YPAY",
-    "can": "Can guests place an order via YPAY?",
-    "canText": "No, they can't. You can upload or link to your menu in YPAY so that your customers can view it",
+    "howLongText": "Getting started with Y-PAY is a snap! After signing the contract, it will take us only 24 hours to get your restaurant up and running with Y-PAY",
+    "can": "Can guests place an order via Y-PAY?",
+    "canText": "No, they can't. You can upload or link to your menu in Y-PAY so that your customers can view it",
     "is": "Is it difficult to set up and train my staff?",
     "isText": "No. Setup takes a few minutes and staff training takes 15 minutes",
-    "which": "Which establishments find YPAY most profitable?",
-    "whichText": "YPAY works very well in any table-service restaurant, from casual to fine dining",
+    "which": "Which establishments find Y-PAY most profitable?",
+    "whichText": "Y-PAY works very well in any table-service restaurant, from casual to fine dining",
     "howMuch": "How much will it cost me?",
     "howMuchText": "It can be completely free if you choose to pass the fee on as a surcharge"
   }

@@ -11,7 +11,7 @@
                         <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase">
                             {{ $t("index.hero.payForYourMeal") }}
                         </h1>
-                        <h2 class="hero__subtitle text-[40px] lg:text-[64px] font-bold uppercase text-white mb-7">
+                        <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
                             {{ $t("index.hero.fast") }}
                         </h2>
                         <p class="hero__description">
@@ -77,7 +77,8 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">12 {{ $t('index.give.min') }}</span>
+                            <span class="dine-in__number">12{{ locale === 'ua' ? ' ' : '' }}{{ $t('index.give.min')
+                                }}</span>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.save") }}
@@ -95,8 +96,9 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">{{ locale === 'ua' ? 'У' : '' }} 8 {{ $t('index.give.x')
-                                }}</span>
+                            <span class="dine-in__number">{{ locale === 'ua' ? 'У' : '' }} 8{{ locale === 'ua' ? ' ' :
+                                '' }}
+                                {{ $t('index.give.x') }}</span>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.get") }}
@@ -147,7 +149,7 @@
                     {{ $t('header.bookADemo') }}
                 </button>
             </div>
-            <img src="/index/hollow-phone.png" class="w-[230px] ml-32 rounded-xl" alt="" />
+            <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" />
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
@@ -175,7 +177,7 @@
         </section>
         <!-- END OF FLEXIBILITY -->
         <!-- RAVE -->
-        <section class="rave mb-40">
+        <section class="rave mb-10 xl:mb-40">
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
                 <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>

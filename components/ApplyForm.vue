@@ -3,7 +3,7 @@
     <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12" />
     <div class="apply__content px-11 2xl:px-40">
       <form class="apply__form w-full px-4 py-12" @submit="submitForm">
-        <h2 class="green-title !text-center">{{
+        <h2 class="!text-center text-xl xl:text-[40px] font-bold text-green">{{
       $t('applyForm.join') }}
         </h2>
         <h3 class="black-title mb-6 !text-center">{{ $t('applyForm.today') }}</h3>
