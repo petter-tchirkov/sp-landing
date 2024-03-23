@@ -153,7 +153,7 @@
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
-        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-64 lg:py-96">
+        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-24 lg:pb-96">
             <div class="flexible__content px-11 xl:px-40 flex flex-col md:flex-row justify-between container">
                 <div class="flexible__left flex flex-col justify-center pt-32 md:pt-0">
                     <h2 class="flexible__title black-title">{{ $t('index.flexible.bePrepared') }}</h2>
@@ -481,7 +481,7 @@ const getExperienceText = computed(() => {
 
 @media screen and (max-width: 1024px) {
     .flexible {
-        background-position: 30%;
+        background-position: 10% top;
     }
 }
 </style>

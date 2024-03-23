@@ -4,7 +4,7 @@
       <PreLoader />
       <ScrollTop />
       <Header />
-      <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-[236px] lg:pb-[150px]">
+      <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-20 xl:pb-[236px] lg:pb-[150px]">
         <div class="hero__text flex flex-col w-full pt-28 !max-w-full">
           <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-20 lg:pt-32">{{ $t('forR.one') }}
           </h1>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="perfect-host m-auto px-11 xl:px-40 container">
-      <h2 class="black-title">
+      <h2 class="text-[32px] xl:text-[40px] uppercase font-bold">
         {{ $t('forR.perfectHost.ensure') }} <span class="green-title">{{ $t('forR.perfectHost.withQuicker') }}</span>
       </h2>
       <h2 class="green-title mb-16">{{ $t('forR.perfectHost.checkins') }}</h2>
@@ -130,7 +130,7 @@
       <h2 class="uppercase text-[40px] font-bold mb-6 text-green">
         {{ $t('forR.primed.toJoin') }}
       </h2>
-      <p class="text-xl max-w-[445px] mb-14">
+      <p class="text-xl mb-14">
         {{ $t('forR.primed.already') }}
       </p>
       <div class="bg-green py-12 rounded-[59px] mb-16 xl:mb-[187px]"
@@ -169,7 +169,7 @@
               {{ $t('forR.goLive.weGenText') }}
             </p>
           </div>
-          <div class="max-w-[350px] ">
+          <div class="max-w-[350px]">
             <p
               class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               3. {{ $t('forR.goLive.train') }}

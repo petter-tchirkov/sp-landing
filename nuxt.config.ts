@@ -37,4 +37,9 @@ export default defineNuxtConfig({
       { code: "es", iso: "es-ES", file: "es.json", name: "Espaniol" },
     ],
   },
+  runtimeConfig: {
+    public: {
+      apiURL: process.env.API_URL,
+    },
+  },
 });

@@ -3,7 +3,7 @@
     <PreLoader />
     <ScrollTop />
     <Header class="!bg-green" />
-    <div class="text-center my-24 container">
+    <div class="text-center !-mb-40 xl:my-24 container">
       <div class="px-11 lg:px-40">
         <h2 class="text-[40px] lg:text-[64px] font-bold uppercase">{{ $t('contact.want') }}</h2>
         <h2 class="text-[36px] lg:text-[48px] font-bold uppercase text-green mb-12">{{ $t('contact.us') }}</h2>

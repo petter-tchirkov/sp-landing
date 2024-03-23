@@ -44,37 +44,43 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <input v-model="formData.restaurantName" type="text" :class="v$.restaurantName.$errors.length
+          <input v-model="formData.restName" type="text" :class="v$.restName.$errors.length
       ? 'bg-[#990100] bg-opacity-15'
       : 'bg-[#f3f3f3]'
       " :placeholder="$t('applyForm.restaurantName')" />
-          <small class="text-[#990100] text-xs" v-for="error in v$.restaurantName.$errors">
+          <small class="text-[#990100] text-xs" v-for="error in v$.restName.$errors">
             {{ error.$message }}
           </small>
         </div>
         <div class="flex justify-center">
-          <button type="submit" class="btn btn-dark apply__btn">
+          <button type="submit" class="btn btn-dark apply__btn" @click="check">
             {{ $t('header.bookADemo') }}
           </button>
         </div>
       </form>
     </div>
+    <CheckMark v-show="checked" />
   </section>
 </template>
 
 <script setup lang="ts">
 import useVuelidate from "@vuelidate/core";
 import { required, email, minLength } from "@vuelidate/validators";
-
-
-const { locale } = useI18n();
+const url = useRuntimeConfig().public.apiURL
+const checked = ref(false)
+const check = () => {
+  checked.value = true
+  setTimeout(() => {
+    checked.value = false
+  }, 2000)
+}
 
 const formData = ref({
   name: "",
   email: "",
   phone: "",
   country: "",
-  restaurantName: "",
+  restName: "",
 });
 
 const rules = computed(() => {
@@ -82,7 +88,7 @@ const rules = computed(() => {
     name: { required, minLength: minLength(3) },
     email: { required, email },
     country: { required },
-    restaurantName: { required, minLength: minLength(3) },
+    restName: { required, minLength: minLength(3) },
   };
 });
 
@@ -94,7 +100,15 @@ const submitForm = async (e: Event) => {
   const result = await v$.value.$validate();
   if (result) {
     e.preventDefault();
-    alert("Form submitted");
+    await $fetch(`${url}/Messages`, {
+      method: "POST",
+      body: formData.value,
+      onResponse({ response }) {
+        if (response.status === 200) {
+          check()
+        }
+      }
+    })
   } else {
     e.preventDefault();
   }

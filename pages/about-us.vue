@@ -26,7 +26,7 @@
     </div>
     <div class="map m-auto max-w-[1110px] px-11 lg:px-0 mt-16 xl:mt-0">
       <h2
-        class="bg-green px-[38px] py-9 lg:py-2 rounded-[33px] lg:rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto">
+        class="bg-green px-8 py-9 lg:py-2 rounded-[33px] lg:rounded-full text-2xl text-white uppercase font-bold text-center mb-9 w-fit mx-auto">
         {{ $t('about.over') }}
       </h2>
       <p class="text-lg text-center max-w-[800px] mx-auto mb-16">

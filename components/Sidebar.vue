@@ -28,7 +28,7 @@
     </ul>
     <div class="flex flex-col items-center gap-4">
       <button
-        class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
+        class="border w-full border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
         {{ $t('header.account') }}
       </button>
       <button class="btn btn-light !text-[#1d9e92]">{{ $t('header.bookADemo') }}</button>
