@@ -100,7 +100,7 @@ const submitForm = async (e: Event) => {
   const result = await v$.value.$validate();
   if (result) {
     e.preventDefault();
-    await $fetch(`${url}/Messages`, {
+    await $fetch(`http://94.130.13.81:8085/api/Messages`, {
       method: "POST",
       body: formData.value,
       onResponse({ response }) {
