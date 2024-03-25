@@ -9,7 +9,8 @@
           <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-8 lg:pt-32">{{ $t('forR.one') }}
           </h1>
           <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
-            {{ $t('forR.forBoth') }}</h2>
+            <TypeWritter :text="$t('forR.forBoth')" />
+          </h2>
           <p class="hero__paragraph">
             {{ $t('forR.fastSync') }}
           </p>

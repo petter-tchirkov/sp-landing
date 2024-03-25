@@ -46,8 +46,8 @@
         <!-- END OF HERO -->
         <!-- TRUSTED -->
         <section class="trusted">
-            <div class="trusted__content px-11 lg:px-40 container">
-                <h2 class="trusted__title text-[36px] lg:text-[40px] uppercase">
+            <div class="trusted__content px-4 lg:px-40 container">
+                <h2 class="trusted__title text-[36px] lg:text-[40px] uppercase font-bold">
                     {{ $t("index.trusted.recommendedBy") }}
                 </h2>
                 <h2 class="trusted__subtitle text-[36px] lg:text-[40px] uppercase">
