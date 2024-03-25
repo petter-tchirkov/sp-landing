@@ -12,7 +12,7 @@
                             {{ $t("index.hero.payForYourMeal") }}
                         </h1>
                         <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
-                            {{ $t("index.hero.fast") }}
+                            <TypeWritter :text="$t('index.hero.fast')" />
                         </h2>
                         <p class="hero__description mb-14">
                             {{ $t("index.hero.imagineGuests") }}
@@ -94,7 +94,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                340
+                                    340
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
@@ -180,8 +180,7 @@
                     <h2 class="flexible__title black-title">{{ $t('index.flexible.bePrepared') }}</h2>
                     <h2 class="flexible__subtitle max-w-[700px]"
                         :class="locale === 'de' ? 'text-2xl uppercase font-bold xl:text-[40px] text-white' : 'white-title'">
-                        {{
-                                $t('index.flexible.toAccept') }}</h2>
+                        {{ $t('index.flexible.toAccept') }}</h2>
                     <p class="flexible__text text-xl text-left max-w-[470px] text-white mt-6 mb-16">
                         {{ $t('index.flexible.customerChoice') }}
                     </p>
@@ -205,8 +204,8 @@
             <div class="rave__content container px-11 xl:px-40 lg:pt-12">
                 <h2 class="rave__title black-title">{{ $t('index.rave.countries') }}</h2>
                 <h2 class="rave__subtitle green-title mb-16">{{ $t('index.rave.faster') }}</h2>
-                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="200" class="py-4">
-                    <slide v-for="review in reviews" :key="review.name">
+                <carousel :items-to-show="width > 1024 ? 2 : 1" :transition="5000" :autoplay="200" class="py-4">
+                    <slide v-for="review in reviews" :key="review.name" class="pb-8">
                         <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
                             <div class="rave__top flex gap-7 mb-8">
                                 <div class="rave__sphere w-24 h-24 rounded-full">

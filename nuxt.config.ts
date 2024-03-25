@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["@/assets/css/style.scss"],
+  ssr: false,
   app: {
     head: {
       title: "Y-PAY",
