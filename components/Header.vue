@@ -24,13 +24,18 @@ const reloadPage = () => {
 };
 
 const scrollToForm = (selector: string, offset: number) => {
-  window.scrollTo({
-    behavior: 'smooth',
-    top:
-      document.querySelector(selector).getBoundingClientRect().top -
-      document.body.getBoundingClientRect().top -
-      offset,
-  })
+  isSidebarShown.value = false
+  if (route.path.includes('/faqs')) {
+    router.push(localePath('/#prime'))
+  } else {
+    window.scrollTo({
+      behavior: 'smooth',
+      top:
+        document.querySelector(selector)!.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset,
+    })
+  }
 };
 </script>
 
