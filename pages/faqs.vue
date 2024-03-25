@@ -8,7 +8,7 @@
       <h2 class="text-[40px] xl:text-[64px] font-bold text-green uppercase">{{ $t('faqs.anything') }}</h2>
     </div>
     <div class="max-w-[1100px] mx-auto mb-40 px-11">
-      <Accordion :activeIndex="0">
+      <Accordion>
         <AccordionTab :header="$t('faqs.what')" :pt="{
         root: () => ({
           class: ['mb-4'],

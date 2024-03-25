@@ -42,9 +42,51 @@ const localePath = useLocalePath()
   background: url(/footer.png);
   background-size: cover;
 
+  .nav {
+    &__link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      position: relative;
+      transition: all 0.3s;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        &::after {
+          width: 80%;
+        }
+      }
+    }
+
+  }
+
   &__socials {
     display: flex;
     gap: 15px;
+  }
+}
+
+.router-link-active {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 80% !important;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
   }
 }
 </style>

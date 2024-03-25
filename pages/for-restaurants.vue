@@ -6,14 +6,14 @@
       <Header />
       <div class="hero__content max-w-[1440px] m-auto px-11 xl:px-40 pb-20 xl:pb-[236px] lg:pb-[150px]">
         <div class="hero__text flex flex-col w-full pt-28 !max-w-full">
-          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-20 lg:pt-32">{{ $t('forR.one') }}
+          <h1 class="hero__title text-[40px] lg:text-[64px] font-bold uppercase pt-8 lg:pt-32">{{ $t('forR.one') }}
           </h1>
           <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
             {{ $t('forR.forBoth') }}</h2>
           <p class="hero__paragraph">
             {{ $t('forR.fastSync') }}
           </p>
-          <button class="btn btn-light w-fit" @click="scrollToForm('.apply',150)">{{ $t('header.bookADemo') }}</button>
+          <button class="btn btn-light w-fit" @click="scrollToForm('.apply', 150)">{{ $t('header.bookADemo') }}</button>
         </div>
       </div>
     </div>
@@ -125,9 +125,9 @@
         <img src="/for-restaurants/perfect-host4.png" alt="" />
       </div>
     </div>
-    <div class="integrates mx-auto container px-11 xl:px-40">
+    <div class="integrates mx-auto container px-4 xl:px-40">
       <h2 class="uppercase text-[40px] font-bold">{{ $t('forR.primed.primed') }}</h2>
-      <h2 class="uppercase text-[40px] font-bold mb-6 text-green">
+      <h2 class="uppercase text-[36px] font-bold mb-6 text-green">
         {{ $t('forR.primed.toJoin') }}
       </h2>
       <p class="text-xl mb-14">
@@ -171,7 +171,7 @@
           </div>
           <div class="max-w-[350px]">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
+              class="px-10 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               3. {{ $t('forR.goLive.train') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">
@@ -180,7 +180,7 @@
           </div>
           <div class="max-w-[350px]  lg:justify-self-end">
             <p
-              class="px-14 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
+              class="px-16 py-3 text-green font-bold text-xl text-center bg-white rounded-full mb-12 -translate-x-10 lg:translate-x-0">
               4. {{ $t('forR.goLive.accept') }}
             </p>
             <p class="text-white pl-11 lx:pl-0">

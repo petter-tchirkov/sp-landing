@@ -42,6 +42,8 @@ import { onClickOutside } from "@vueuse/core";
 const { isSidebarShown } = storeToRefs(useGlobalStore());
 const headerNav = ref();
 const localePath = useLocalePath();
+const router = useRouter();
+const route = useRoute();
 
 onClickOutside(headerNav, () => {
   if (isSidebarShown.value === true) {
@@ -51,13 +53,17 @@ onClickOutside(headerNav, () => {
 
 const scrollToForm = (selector: string, offset: number) => {
   isSidebarShown.value = false
-  window.scrollTo({
-    behavior: 'smooth',
-    top:
-      document.querySelector(selector).getBoundingClientRect().top -
-      document.body.getBoundingClientRect().top -
-      offset,
-  })
+  if (route.path.includes('/faqs')) {
+    router.push(localePath('/#prime'))
+  } else {
+    window.scrollTo({
+      behavior: 'smooth',
+      top:
+        document.querySelector(selector)!.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset,
+    })
+  }
 };
 
 </script>
