@@ -111,6 +111,14 @@ const submitForm = async () => {
       }
     })
   }
+  v$.value.$reset()
+  formData.value = {
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
+    restName: "",
+  };
 };
 </script>
 

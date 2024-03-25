@@ -17,10 +17,11 @@
                         <p class="hero__description mb-14">
                             {{ $t("index.hero.imagineGuests") }}
                         </p>
-                        <button class="hero__btn btn btn-light" @click="scrollToForm">{{ $t("header.bookADemo")
+                        <button class="hero__btn btn btn-light" @click="scrollToForm('.apply', 150)">{{
+                                $t("header.bookADemo")
                             }}</button>
                     </div>
-                    <img src="/index/qr.png" alt="" />
+                    <img src="/index/qr.png" alt="" class="hover:animate-wiggle">
                 </div>
                 <div class="hero__specs flex flex-col lg:flex-row mx-11 xl:mx-0 xl:ml-40">
                     <div class="hero__spec">
@@ -77,8 +78,12 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">12{{ locale === 'ua' ? ' ' : '' }}{{ $t('index.give.min')
-                                }}</span>
+                            <div class="flex absolute top-[25px] left-[55px]">
+                                <span class="dine-in__number">
+                                    <NumberIncrement :to="mins" :speed="1" />
+                                </span>
+                                <span class="dine-in__rest"> {{ '&nbsp;' + $t('index.give.min') }}</span>
+                            </div>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.save") }}
@@ -87,7 +92,12 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">340%</span>
+                            <div class="flex absolute top-[25px] left-[55px]">
+                                <span class="dine-in__number">
+                                    <NumberIncrement :to="percent" :speed="3" />
+                                </span>
+                                <span class="dine-in__rest">%</span>
+                            </div>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.earn") }}
@@ -96,18 +106,27 @@
                     <div class="dine-in__item relative mb-16">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">{{ locale === 'ua' ? 'У' : '' }} 8{{ locale === 'ua' ? ' ' :
-                                '' }}
-                                {{ $t('index.give.x') }}</span>
+                            <div class="flex absolute top-[25px] left-[55px]">
+                                <span class="dine-in__rest" v-if="locale === 'ua'">У</span>
+                                <span class="dine-in__number">
+                                    <NumberIncrement :to="x" :speed="1" />
+                                </span>
+                                <span class="dine-in__rest">{{ $t('index.give.x') }}</span>
+                            </div>
                         </div>
-                        <div class="dine-in__description">
+                        <div class="dine-in__description max-w-64">
                             {{ $t("index.give.get") }}
                         </div>
                     </div>
                     <div class="dine-in__item relative mb-4">
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
-                            <span class="dine-in__number">100%</span>
+                            <div class="flex absolute top-[25px] left-[55px]">
+                                <span class="dine-in__number">
+                                    <NumberIncrement :to="guarantee" :speed="3" />
+                                </span>
+                                <span class="dine-in__rest">%</span>
+                            </div>
                         </div>
                         <div class="dine-in__description">
                             {{ $t("index.give.guarantee") }}
@@ -118,9 +137,11 @@
         </section>
         <!-- END OF DINE-IN -->
         <!-- PAYMENT -->
-        <section class="payment container flex flex-col lg:flex-row px-11 xl:px-40 pt-24">
+        <section class="payment container flex flex-col lg:flex-row px-4 xl:px-40 pt-24">
             <div class="payment__content">
-                <h2 class="payment__title black-title">{{ $t("index.payment.experience") }}</h2>
+                <h2 class="payment__title"
+                    :class="locale === 'de' ? 'text-2xl xl:text-[40px] font-bold uppercase' : 'black-title'">
+                    {{ $t("index.payment.experience") }}</h2>
                 <h2 class="payment__subtitle green-title mb-12">
                     {{ $t("index.payment.crave") }}
                 </h2>
@@ -145,7 +166,7 @@
                 <p class="payment__text">
                     {{ getExperienceText }}
                 </p>
-                <button class="btn btn-dark payment__btn mb-20" @click="scrollToForm">
+                <button class="btn btn-dark payment__btn mb-20" @click="scrollToForm('.apply', 150)">
                     {{ $t('header.bookADemo') }}
                 </button>
             </div>
@@ -157,7 +178,10 @@
             <div class="flexible__content px-11 xl:px-40 flex flex-col md:flex-row justify-between container">
                 <div class="flexible__left flex flex-col justify-center pt-32 md:pt-0">
                     <h2 class="flexible__title black-title">{{ $t('index.flexible.bePrepared') }}</h2>
-                    <h2 class="flexible__subtitle white-title">{{ $t('index.flexible.toAccept') }}</h2>
+                    <h2 class="flexible__subtitle max-w-[700px]"
+                        :class="locale === 'de' ? 'text-2xl uppercase font-bold xl:text-[40px] text-white' : 'white-title'">
+                        {{
+                                $t('index.flexible.toAccept') }}</h2>
                     <p class="flexible__text text-xl text-left max-w-[470px] text-white mt-6 mb-16">
                         {{ $t('index.flexible.customerChoice') }}
                     </p>
@@ -186,7 +210,7 @@
                         <div class="rave__item py-9 px-7 bg-[#f8f8f8] rounded-[34px] shadow-box mb-9 md:mb-0">
                             <div class="rave__top flex gap-7 mb-8">
                                 <div class="rave__sphere w-24 h-24 rounded-full">
-                                    <img class="rounded-full w-full object-cover w-24 h-24"
+                                    <img class="rounded-full object-cover w-24 h-24"
                                         :src="`/reviews/${review.image}.jpeg`" alt="">
                                 </div>
                                 <div class="rave__name flex flex-col items-start">
@@ -232,20 +256,28 @@
 import { useWindowSize } from "@vueuse/core";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
+import NumberIncrement from 'vue-number-increment'
+
 
 const { width } = useWindowSize();
 const { locale } = useI18n();
 const actions = ref("scan");
 const { t } = useI18n()
 
-const scrollToForm = () => {
-    const form = document.getElementById("apply");
-    if (form) {
-        form.scrollIntoView({ behavior: "smooth" });
-    }
+const scrollToForm = (selector: string, offset: number) => {
+    window.scrollTo({
+        behavior: 'smooth',
+        top:
+            document.querySelector(selector).getBoundingClientRect().top -
+            document.body.getBoundingClientRect().top -
+            offset,
+    })
 };
 
-
+const mins = ref(12)
+const percent = ref(340)
+const x = ref(8)
+const guarantee = ref(100)
 
 const reviews = ref([
     {
@@ -373,17 +405,16 @@ const getExperienceText = computed(() => {
 
 .dine-in {
 
-    &__number {
+    &__number,
+    &__rest {
         font-weight: 700;
         font-size: 36px;
         line-height: 50px;
         text-align: left;
         text-transform: uppercase;
         color: #fff;
-        position: absolute;
-        top: 25px;
-        left: 55px;
     }
+
 
     &__description {
         font-size: 20px;
@@ -480,8 +511,7 @@ const getExperienceText = computed(() => {
 
 @media screen and (max-width: 1024px) {
     .flexible {
-        background-position: center;
-        background-attachment: fixed;
+        background-position: 10%;
     }
 }
 </style>

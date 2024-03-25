@@ -6,6 +6,15 @@ const localePath = useLocalePath();
 const route = useRoute()
 const router = useRouter();
 
+const isOnTop = computed(() => y.value < 100);
+
+const scrollTop = async () => {
+  y.value = 0;
+}
+await scrollTop()
+
+
+
 const reloadPage = () => {
   if (route.path === localePath("/")) {
     location.reload();
@@ -14,17 +23,20 @@ const reloadPage = () => {
   }
 };
 
-const scrollToForm = () => {
-  const form = document.getElementById("apply");
-  if (form) {
-    form.scrollIntoView({ behavior: "smooth" });
-  }
+const scrollToForm = (selector: string, offset: number) => {
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  })
 };
 </script>
 
 <template>
   <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
-    :class="y > 100 ? 'bg-green' : 'bg-transparent'">
+    :class="!isOnTop ? 'bg-green' : 'bg-transparent'">
     <div class="flex items-center justify-between px-11 xl:px-40 w-full max-w-dp mx-auto">
       <NuxtLink @click="reloadPage" class="after:hidden">
         <img src="/logo.svg" class="w-[160px]" />
@@ -54,7 +66,8 @@ const scrollToForm = () => {
           class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
           {{ $t('header.account') }}
         </button>
-        <button class="btn btn-light !text-[#1d9e92]" @click="scrollToForm"> {{ $t('header.bookADemo') }}</button>
+        <button class="btn btn-light !text-[#1d9e92]" @click="scrollToForm('.apply', 150)"> {{ $t('header.bookADemo')
+          }}</button>
       </div>
     </div>
     <Sidebar />
@@ -62,8 +75,11 @@ const scrollToForm = () => {
 </template>
 
 <style scoped lang="scss">
-.header {
-  a {
+.nav {
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     position: relative;
     transition: all 0.3s;
 
@@ -83,14 +99,6 @@ const scrollToForm = () => {
         width: 80%;
       }
     }
-  }
-}
-
-.nav {
-  &__link {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
   }
 }
 

@@ -13,7 +13,7 @@
           <p class="hero__paragraph">
             {{ $t('forR.fastSync') }}
           </p>
-          <button class="btn btn-light w-fit" @click="scrollToForm">{{ $t('header.bookADemo') }}</button>
+          <button class="btn btn-light w-fit" @click="scrollToForm('.apply',150)">{{ $t('header.bookADemo') }}</button>
         </div>
       </div>
     </div>
@@ -147,7 +147,7 @@
     </div>
     <div class="go-live pt-48 lg:pb-[250px] lg:pt-[120px] pb-64">
       <div class="mx-auto max-w-[1110px]">
-        <h2 class="text-[40px] uppercase text-center font-bold my-28 px-11 xl:px-0">
+        <h2 class="text-[40px] uppercase text-center font-bold my-28 px-4 xl:px-0">
           {{ $t('forR.goLive.go') }}<br /> <span class="text-white">{{ $t('forR.goLive.than48') }}</span>
         </h2>
         <div class="grid-cols-1 lg:grid-cols-2 justify-between max-w-[886px] m-auto gap-24 grid">
@@ -201,11 +201,14 @@ import { Carousel, Slide, Navigation } from "vue3-carousel";
 import { useWindowSize } from "@vueuse/core";
 const { width } = useWindowSize();
 
-const scrollToForm = () => {
-  const form = document.getElementById("apply");
-  if (form) {
-    form.scrollIntoView({ behavior: "smooth" });
-  }
+const scrollToForm = (selector: string, offset: number) => {
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  })
 };
 
 

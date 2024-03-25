@@ -31,7 +31,8 @@
         class="border w-full border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
         {{ $t('header.account') }}
       </button>
-      <button class="btn btn-light !text-[#1d9e92]" @click="scrollToForm">{{ $t('header.bookADemo') }}</button>
+      <button class="btn btn-light !text-[#1d9e92]" @click="scrollToForm('.apply', 150)">{{ $t('header.bookADemo')
+        }}</button>
     </div>
   </nav>
 </template>
@@ -48,12 +49,15 @@ onClickOutside(headerNav, () => {
   }
 });
 
-const scrollToForm = () => {
-  const form = document.getElementById("apply");
-  if (form) {
-    isSidebarShown.value = false;
-    form.scrollIntoView({ behavior: "smooth" });
-  }
+const scrollToForm = (selector: string, offset: number) => {
+  isSidebarShown.value = false
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  })
 };
 
 </script>

@@ -2,6 +2,15 @@ export default {
   content: ["presets/**/*.{js,vue,ts}"],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
       colors: {
         "primary-50": "rgb(var(--primary-50))",
         "primary-100": "rgb(var(--primary-100))",

@@ -69,7 +69,7 @@
       <div
         class="bg-green py-14 flex flex-col lg:flex-row lg:items-center lg:justify-around gap-6 px-11 xl:px-60 mb-20">
         <span class="text-white text-2xl">{{ $t('applyForm.join') }}</span>
-        <button @click="scrollToForm" class="btn btn-light">{{ $t('header.bookADemo') }}</button>
+        <button @click="scrollToForm('.apply', 150)" class="btn btn-light">{{ $t('header.bookADemo') }}</button>
       </div>
       <ApplyForm src="/index/customer.png" />
       <Footer />
@@ -80,11 +80,15 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core';
 const { width } = useWindowSize();
-const scrollToForm = () => {
-  const form = document.getElementById("apply");
-  if (form) {
-    form.scrollIntoView({ behavior: "smooth" });
-  }
+
+const scrollToForm = (selector: string, offset: number) => {
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  })
 };
 
 </script>

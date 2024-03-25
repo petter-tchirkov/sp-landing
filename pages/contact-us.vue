@@ -18,28 +18,28 @@
           <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
             <div class="flex flex-col gap-2">
               <img src="/contact/ua.svg" alt="" class="w-fit">
-              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <h3 class="text-xl uppercase text-left font-bold">Ukraine</h3>
               <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
             <div class="flex flex-col gap-2">
               <img src="/contact/es.svg" alt="" class="w-fit">
-              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <h3 class="text-xl uppercase text-left font-bold">Spain</h3>
               <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
             <div class="flex flex-col gap-2">
               <img src="/contact/pl.svg" alt="" class="w-fit">
-              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <h3 class="text-xl uppercase text-left font-bold">Poland</h3>
               <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
           <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
             <div class="flex flex-col gap-2">
               <img src="/contact/uae.svg" alt="" class="w-fit">
-              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <h3 class="text-xl uppercase text-left font-bold">United Arab Emirates</h3>
               <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
