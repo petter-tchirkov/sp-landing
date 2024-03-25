@@ -6,10 +6,6 @@ const localePath = useLocalePath();
 const route = useRoute()
 const router = useRouter();
 
-onBeforeMount(() => {
-  y.value = 0;
-});
-
 const reloadPage = () => {
   if (route.path === localePath("/")) {
     location.reload();

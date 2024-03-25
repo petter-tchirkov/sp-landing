@@ -48,7 +48,6 @@
       content: '';
       height: 100px;
       position: absolute;
-      background: #FFFFFF;
       transform: rotate(-45deg);
     }
 
@@ -97,7 +96,6 @@
       height: 85px;
       position: absolute;
       transform: rotate(-45deg);
-      background-color: #FFFFFF;
     }
   }
 }

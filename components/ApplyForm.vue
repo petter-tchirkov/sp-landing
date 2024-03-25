@@ -2,7 +2,7 @@
   <section id="apply" class="apply flex flex-col-reverse lg:flex-row gap-28 items-center relative mb-32">
     <img :src="src" alt="" class=" md:-translate-x-36 lg:-translate-x-12" />
     <div class="apply__content px-11 2xl:px-40">
-      <form class="apply__form w-full px-4 py-12" @submit="submitForm">
+      <form class="apply__form w-full px-4 py-12" @submit.prevent="submitForm">
         <h2 class="!text-center text-xl xl:text-[40px] font-bold text-green">{{
       $t('applyForm.join') }}
         </h2>
@@ -30,7 +30,7 @@
       ? 'bg-[#990100] bg-opacity-15'
       : 'bg-[#f3f3f3]'
       " :placeholder="$t('applyForm.phone') + '&#42'" />
-          <small class="text-[#990100] text-xs" v-for="error in v$.email.$errors">
+          <small class="text-[#990100] text-xs" v-for="error in v$.phone.$errors">
             {{ error.$message }}
           </small>
         </div>
@@ -44,16 +44,10 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <input v-model="formData.restName" type="text" :class="v$.restName.$errors.length
-      ? 'bg-[#990100] bg-opacity-15'
-      : 'bg-[#f3f3f3]'
-      " :placeholder="$t('applyForm.restaurantName')" />
-          <small class="text-[#990100] text-xs" v-for="error in v$.restName.$errors">
-            {{ error.$message }}
-          </small>
+          <input v-model="formData.restName" type="text" :placeholder="$t('applyForm.restaurantName')" />
         </div>
         <div class="flex justify-center">
-          <button type="submit" class="btn btn-dark apply__btn" @click="check">
+          <button type="submit" class="btn btn-dark apply__btn">
             {{ $t('header.bookADemo') }}
           </button>
         </div>
@@ -65,8 +59,7 @@
 
 <script setup lang="ts">
 import useVuelidate from "@vuelidate/core";
-import { required, email, minLength } from "@vuelidate/validators";
-const url = useRuntimeConfig().public.apiURL
+import { required, email, minLength, numeric } from "@vuelidate/validators";
 const checked = ref(false)
 const check = () => {
   checked.value = true
@@ -88,7 +81,7 @@ const rules = computed(() => {
     name: { required, minLength: minLength(3) },
     email: { required, email },
     country: { required },
-    restName: { required, minLength: minLength(3) },
+    phone: { required, numeric },
   };
 });
 
@@ -96,10 +89,9 @@ const v$ = useVuelidate(rules, formData);
 
 const { src = "customer.png" } = defineProps<{ src: string }>();
 
-const submitForm = async (e: Event) => {
+const submitForm = async () => {
   const result = await v$.value.$validate();
   if (result) {
-    e.preventDefault();
     await $fetch(`http://94.130.13.81:8085/api/Messages`, {
       method: "POST",
       body: formData.value,
@@ -109,8 +101,6 @@ const submitForm = async (e: Event) => {
         }
       }
     })
-  } else {
-    e.preventDefault();
   }
 };
 </script>
