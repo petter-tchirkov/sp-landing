@@ -80,7 +80,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    <NumberIncrement :to="mins" :speed="1" />
+                                    12
                                 </span>
                                 <span class="dine-in__rest"> {{ '&nbsp;' + $t('index.give.min') }}</span>
                             </div>
@@ -94,7 +94,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    <NumberIncrement :to="percent" :speed="3" />
+                                340
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
@@ -109,7 +109,7 @@
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__rest" v-if="locale === 'ua'">У</span>
                                 <span class="dine-in__number">
-                                    <NumberIncrement :to="x" :speed="1" />
+                                    8
                                 </span>
                                 <span class="dine-in__rest">{{ $t('index.give.x') }}</span>
                             </div>
@@ -123,7 +123,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    <NumberIncrement :to="guarantee" :speed="3" />
+                                    100
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
@@ -256,7 +256,6 @@
 import { useWindowSize } from "@vueuse/core";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
-import NumberIncrement from 'vue-number-increment'
 
 
 const { width } = useWindowSize();
