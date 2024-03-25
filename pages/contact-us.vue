@@ -8,39 +8,39 @@
         <h2 class="text-[40px] lg:text-[64px] font-bold uppercase">{{ $t('contact.want') }}</h2>
         <h2 class="text-[36px] lg:text-[48px] font-bold uppercase text-green mb-12">{{ $t('contact.us') }}</h2>
         <div class="flex lg:gap-8 flex-wrap">
-          <div class="relative mb-12 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/de.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Germany</h3>
-              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+          <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
+            <div class="flex flex-col gap-2">
+              <img src="/contact/de.svg" alt="" class="w-fit">
+              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
-          <div class="relative mb-12 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/ua.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Ukraine</h3>
-              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+          <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
+            <div class="flex flex-col gap-2">
+              <img src="/contact/ua.svg" alt="" class="w-fit">
+              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
-          <div class="relative mb-12 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/es.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Spain</h3>
-              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+          <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
+            <div class="flex flex-col gap-2">
+              <img src="/contact/es.svg" alt="" class="w-fit">
+              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
-          <div class="relative mb-12 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/pl.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">Poland</h3>
-              <a href="mailto:info@yumaxpay.com" class="text-left pl-9">info@yumaxpay.com</a>
+          <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
+            <div class="flex flex-col gap-2">
+              <img src="/contact/pl.svg" alt="" class="w-fit">
+              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
-          <div class="relative mb-12 lg:min-w-[350px] w-full lg:w-auto">
-            <img src="/contact/uae.png" alt="" class="top-0 left-0 w-full">
-            <div class="absolute bottom-1/2 !text-left">
-              <h3 class="text-xl uppercase text-left pl-9 pt-14 mb-2 font-bold">United Arab Emirates</h3>
-              <a href="mailto:info@yumaxpay.com" class="!text-left pl-9">info@yumaxpay.com</a>
+          <div class="relative mb-12 lg:min-w-[350px] p-9 pb-11 bg-[#f7f7f7] rounded-[17px] w-full lg:w-auto">
+            <div class="flex flex-col gap-2">
+              <img src="/contact/uae.svg" alt="" class="w-fit">
+              <h3 class="text-xl uppercase text-left font-bold">Germany</h3>
+              <a href="mailto:info@yumaxpay.com" class="!text-left">info@yumaxpay.com</a>
             </div>
           </div>
         </div>

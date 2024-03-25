@@ -14,11 +14,17 @@
     "country": "País",
     "restaurantName": "Nombre de su restaurante",
     "join": "¡Únete a YPAY",
-    "today": "hoy mismo!"
+    "today": "hoy mismo!",
+    "nameReq": "Nombre es requerido",
+    "emailReq": "Correo electrónico es requerido",
+    "emailValid": "Correo electrónico no válido",
+    "phoneReq": "Se requiere número de teléfono",
+    "phoneValid": "Número de teléfono no válido",
+    "countryReq": "País es requerido"
   },
   "index": {
     "hero": {
-      "payForYourMeal": "Pague por sus comidas en el restaurante",
+      "payForYourMeal": "Pague por sus comidas",
       "fast": "RÁPIDO",
       "imagineGuests": "Imagina que tus invitados pueden revisar rápidamente el menú y pagar por sus pedidos con un simple escaneo",
       "seatFaster": "Coloque las mesas más rápido",
@@ -50,9 +56,9 @@
       "experience": "La experiencia de pago",
       "crave": "que los huéspedes anhelan hoy",
       "scan": "Coloque el código QR en la mesa. Los clientes lo escanean con cualquier teléfono inteligente. El menú y la factura aparecen al instante",
-      "split": "Todos en la mesa escanean el código QR. Pueden elegir pagar por artículos o dividir la cuenta por igual. No se necesita calculadora.",
-      "tip": "Al pagar la cuenta, al cliente se le ofrece la opción de dejar propina. Con un solo clic, pueden mostrar su aprecio sin complicaciones.",
-      "pay": "Pagos instantáneos con Apple Pay, Google Pay o cualquier tarjeta de débito o crédito local o internacional."
+      "split": "Todos en la mesa escanean el código QR. Pueden elegir pagar por artículos o dividir la cuenta por igual. No se necesita calculadora",
+      "tip": "Al pagar la cuenta, al cliente se le ofrece la opción de dejar propina. Con un solo clic, pueden mostrar su aprecio sin complicaciones",
+      "pay": "Pagos instantáneos con Apple Pay, Google Pay o cualquier tarjeta de débito o crédito local o internacional"
     },
     "flexible": {
       "bePrepared": "Estar preparado",
@@ -65,13 +71,13 @@
     },
     "primed": {
       "primed": "Listo y preparado",
-      "toJoin": "para unirse a su equipo de POS.",
+      "toJoin": "para unirse a su equipo de POS",
       "already": "YPAY ya está integrado con los principales sistemas de POS. ¡Puede lanzar el sistema en menos de 48 horas!"
     }
   },
   "forR": {
-    "one": "UNA ESCANEO -",
-    "forBoth": "tanto para elegir platos como para el pago, para la comodidad tanto de los clientes como del personal",
+    "one": "SELECCIÓN DE PLATOS Y PAGO",
+    "forBoth": "UN ESCÁNER",
     "fastSync": "Rápida sincronización con su sistema POS",
     "saveTime": "Ahorre tiempo",
     "saveMoney": "Ahorre dinero",
@@ -94,13 +100,13 @@
       "withQuicker": "con registros",
       "checkins": "y salidas más rápidos",
       "qr": "QR-Códigos",
-      "qrText": "YPAY proporciona códigos QR individuales y únicos para cada mesa, lo que ayuda a su personal a realizar un mejor seguimiento de los pagos.",
+      "qrText": "YPAY proporciona códigos QR individuales y únicos para cada mesa, lo que ayuda a su personal a realizar un mejor seguimiento de los pagos",
       "ci": "Integración continua",
-      "ciText": "YPAY se sincroniza directamente con su sistema de punto de venta sin cambiar la forma en que dirige su negocio.",
+      "ciText": "YPAY se sincroniza directamente con su sistema de punto de venta sin cambiar la forma en que dirige su negocio",
       "noApp": "SIN APLICACIÓN",
-      "noAppText": "Tus clientes no necesitan descargar ninguna aplicación. YPAY es un servicio de pago basado en web que funciona en todos los navegadores web.",
+      "noAppText": "Tus clientes no necesitan descargar ninguna aplicación. YPAY es un servicio de pago basado en web que funciona en todos los navegadores web",
       "rtd": "DATOS EN TIEMPO REAL",
-      "rtdText": "Las transacciones completadas se reflejan instantáneamente en tu panel de control. Y puedes acceder a él desde cualquier dispositivo."
+      "rtdText": "Las transacciones completadas se reflejan instantáneamente en tu panel de control. Y puedes acceder a él desde cualquier dispositivo"
     },
     "primed": {
       "primed": "Listo y preparado",
@@ -110,10 +116,10 @@
     "goLive": {
       "go": "¡PUESTA EN MARCHA",
       "than48": "EN MENOS DE 48 HORAS!",
-      "youReach": "Te pones en contacto con nosotros.",
-      "youReachText": "Proporcione algunos detalles en el formulario de contacto y nuestro equipo responderá con un horario de reunión.",
-      "weGen": "Generamos códigos QR.",
-      "weGenText": "Son únicos para cada mesa y tu marca, así que puedes realizar un seguimiento de las cuentas y los pagos.",
+      "youReach": "Te pones en contacto con nosotros",
+      "youReachText": "Proporcione algunos detalles en el formulario de contacto y nuestro equipo responderá con un horario de reunión",
+      "weGen": "Generamos códigos QR",
+      "weGenText": "Son únicos para cada mesa y tu marca, así que puedes realizar un seguimiento de las cuentas y los pagos",
       "train": "Estamos entrenando a su personal",
       "trainText": "Mostraremos a su personal cómo usar YPAY y estarán completamente listos en 15 minutos",
       "accept": "Usted acepta pagos",
@@ -125,8 +131,8 @@
     "ourP": "Nuestro programa es la manera perfecta de agilizar el proceso de pedido y pago en su establecimiento favorito. Mediante códigos QR, puede realizar y pagar su pedido fácilmente sin tener que salir de su mesa. Simplemente escanee el código QR ubicado en su mesa o en el menú utilizando nuestra aplicación y acceda a la lista completa de platos y bebidas",
     "once": "Una vez que haya seleccionado sus platos favoritos, puede realizar su pedido directamente desde su teléfono inteligente. Además, nuestro programa le permite agregar cualquier solicitud especial o aclaración a su pedido. Cuando haya terminado, simplemente seleccione la opción de pago y pague su pedido directamente a través de la aplicación",
     "quick": "Es rápido, conveniente y seguro: puede disfrutar de su almuerzo o cena sin perder tiempo esperando servicio o procesando el pago. Nuestro programa está diseñado para su comodidad y satisfacción, haciendo que su estancia en el establecimiento sea lo más agradable posible",
-    "over": "Hoy en día, más de 1000 restaurantes están asociados con YPAY.",
-    "countries": "En los Emiratos Árabes Unidos, Polonia, Alemania, Ucrania y España. ¡Somos globales! Los llamamos nuestros socios porque colaboramos con ellos para brindar a sus clientes una experiencia de pedido rápida y sin interrupciones.",
+    "over": "Hoy en día, más de 1000 restaurantes están asociados con YPAY",
+    "countries": "En los Emiratos Árabes Unidos, Polonia, Alemania, Ucrania y España. ¡Somos globales! Los llamamos nuestros socios porque colaboramos con ellos para brindar a sus clientes una experiencia de pedido rápida y sin interrupciones",
     "who": {
       "who": "QUIÉNES SOMOS",
       "ourTeam": "Nuestro equipo es un grupo cohesionado de talentosos desarrolladores, diseñadores e ingenieros que trabajan en la creación de una aplicación que facilite procesos de pedido y pago rápidos y convenientes. Nuestro objetivo es proporcionar el máximo confort para nuestros usuarios, por lo tanto, diseñamos una interfaz intuitiva y fácil de usar que permite ordenar platos y pagarlos con solo unos pocos clics",
@@ -153,9 +159,9 @@
     "doYou": "¿Se integran con sistemas de punto de venta?",
     "doYouText": "Nos integramos con cualquier sistema de punto de venta en 48 horas",
     "whatAre": "¿Cuáles son las ventajas de YPAY?",
-    "whatAreText": "Mejor experiencia del cliente, facturación de 3 a 5 minutos más rápida, el doble de propinas.",
+    "whatAreText": "Mejor experiencia del cliente, facturación de 3 a 5 minutos más rápida, el doble de propinas",
     "howLong": "¿Cuánto se tarda en instalarse?",
-    "howLongText": "Empezar con YPAY es así de sencillo. Tras firmar el contrato, solo tardaremos 24 horas en poner en marcha su restaurante con YPAY.",
+    "howLongText": "Empezar con YPAY es así de sencillo. Tras firmar el contrato, solo tardaremos 24 horas en poner en marcha su restaurante con YPAY",
     "can": "¿Pueden los invitados hacer un pedido a través de YPAY?",
     "canText": "No, no pueden. Puedes subir o enlazar tu menú en YPAY para que tus clientes puedan verlo",
     "is": "¿Es difícil configurar y formar a mi personal?",

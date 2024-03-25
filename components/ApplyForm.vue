@@ -44,7 +44,8 @@
           </small>
         </div>
         <div class="apply__input-group">
-          <input v-model="formData.restName" type="text" :placeholder="$t('applyForm.restaurantName')" />
+          <input v-model="formData.restName" type="text" class="bg-[#f3f3f3]"
+            :placeholder="$t('applyForm.restaurantName')" />
         </div>
         <div class="flex justify-center">
           <button type="submit" class="btn btn-dark apply__btn">
@@ -59,7 +60,9 @@
 
 <script setup lang="ts">
 import useVuelidate from "@vuelidate/core";
-import { required, email, minLength, numeric } from "@vuelidate/validators";
+import { required, email, minLength, numeric, helpers } from "@vuelidate/validators";
+const { t } = useI18n()
+
 const checked = ref(false)
 const check = () => {
   checked.value = true
@@ -78,10 +81,16 @@ const formData = ref({
 
 const rules = computed(() => {
   return {
-    name: { required, minLength: minLength(3) },
-    email: { required, email },
-    country: { required },
-    phone: { required, numeric },
+    name: { required: helpers.withMessage(() => t('applyForm.nameReq'), required) },
+    email: {
+      required: helpers.withMessage(() => t('applyForm.emailReq'), required),
+      email: helpers.withMessage(() => t('applyForm.emailValid'), email)
+    },
+    country: { required: helpers.withMessage(() => t('applyForm.countryReq'), required) },
+    phone: {
+      required: helpers.withMessage(() => t('applyForm.phoneReq'), required),
+      numeric: helpers.withMessage(() => t('applyForm.phoneValid'), numeric),
+    },
   };
 });
 

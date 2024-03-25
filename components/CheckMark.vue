@@ -1,8 +1,8 @@
 <script setup lang="ts">
 </script>
 <template>
-  <div class="h-screen w-screen fixed top-0 left-0">
-    <div class="success-checkmark absolute top-1/2 left-1/2">
+  <div class="h-screen w-screen fixed top-0 left-0 flex justify-center items-center">
+    <div class="success-checkmark ">
       <div class="check-icon">
         <span class="icon-line line-tip"></span>
         <span class="icon-line line-long"></span>

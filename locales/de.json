@@ -14,13 +14,19 @@
     "country": "Land",
     "restaurantName": "Name Ihres Restaurants",
     "join": "Treten Sie YPAY noch",
-    "today": "heute bei!"
+    "today": "heute bei!",
+    "nameReq": "Name ist erforderlich",
+    "emailReq": "Email ist erforderlich",
+    "emailValid": "Email ist ungültig",
+    "phoneReq": "Telefon ist erforderlich",
+    "phoneValid": "Telefon ist ungültig",
+    "countryReq": "Land ist erforderlich"
   },
   "index": {
     "hero": {
-      "payForYourMeal": "Bezahlen Sie Ihre Mahlzeiten im Restaurant",
+      "payForYourMeal": "Bezahlen Sie Ihre Mahlzeiten",
       "fast": "SCHNELL",
-      "imagineGuests": "Stellen Sie sich vor, Ihre Gäste können das Menü schnell durchsehen und ihre Bestellungen mit einem einfachen Scan bezahlen.",
+      "imagineGuests": "Stellen Sie sich vor, dass Ihre Gäste die Speisekarte schnell durchblättern und ihre Mahlzeiten mit einem einfachen Scan bezahlen können",
       "seatFaster": "Schneller Tische umsetzen",
       "earnTips": "Mehr Trinkgeld verdienen",
       "fastPayment": "Schnelle und sichere Zahlung",
@@ -49,30 +55,30 @@
       },
       "experience": "Die Zahlungserfahrung",
       "crave": "nach der die Gäste heute verlangen",
-      "scan": "Platzieren Sie den QR-Code auf dem Tisch. Kunden scannen ihn mit jedem Smartphone. Das Menü und die Rechnung erscheinen im Handumdrehen.",
-      "split": "Alle am Tisch scannen den QR-Code. Sie können wählen, ob sie nach Einzelpositionen bezahlen oder die Rechnung gleichmäßig aufteilen möchten. Ein Taschenrechner ist nicht erforderlich.",
-      "tip": "Alle am Tisch scannen den QR-Code. Sie können wählen, ob sie nach Einzelpositionen bezahlen oder die Rechnung gleichmäßig aufteilen möchten. Ein Taschenrechner ist nicht erforderlich.",
-      "pay": "Sofortige Zahlungen mit Apple Pay, Google Pay oder jeder lokalen oder internationalen Debit- oder Kreditkarte."
+      "scan": "Platzieren Sie den QR-Code auf dem Tisch. Kunden scannen ihn mit jedem Smartphone. Das Menü und die Rechnung erscheinen im Handumdrehen",
+      "split": "Alle am Tisch scannen den QR-Code. Sie können wählen, ob sie nach Einzelpositionen bezahlen oder die Rechnung gleichmäßig aufteilen möchten. Ein Taschenrechner ist nicht erforderlich",
+      "tip": "Alle am Tisch scannen den QR-Code. Sie können wählen, ob sie nach Einzelpositionen bezahlen oder die Rechnung gleichmäßig aufteilen möchten. Ein Taschenrechner ist nicht erforderlich",
+      "pay": "Sofortige Zahlungen mit Apple Pay, Google Pay oder jeder lokalen oder internationalen Debit- oder Kreditkarte"
     },
     "flexible": {
       "bePrepared": "Seien Sie bereit",
-      "toAccept": "verschiedene Zahlungsmethoden zu akzeptieren.",
+      "toAccept": "verschiedene Zahlungsmethoden zu akzeptieren",
       "customerChoice": "Jeder Kunde hat eine Wahl. YPAY arbeitet mit führenden globalen Zahlungspartnern zusammen"
     },
     "rave": {
       "countries": "Über 1000 Restaurants in 5 Ländern schwärmen",
-      "faster": "von unseren schnelleren Zahlungen."
+      "faster": "von unseren schnelleren Zahlungen"
     },
     "primed": {
       "primed": "Bereit und wartet darauf",
-      "toJoin": "sich Ihrem POS-Team anzuschließen.",
+      "toJoin": "sich Ihrem POS-Team anzuschließen",
       "already": "YPAY ist bereits in führende POS-Systeme integriert. Sie können das System in weniger als 48 Stunden starten!"
     }
   },
   "forR": {
-    "one": "EIN SCAN -",
-    "forBoth": "sowohl zum Auswählen von Gerichten als auch zum Bezahlen, zum Komfort sowohl der Kunden als auch des Personals.",
-    "fastSync": "Schnelle Synchronisierung mit Ihrem POS-System",
+    "one": "AUSWAHL DER GERICHTE UND BEZAHLUNG",
+    "forBoth": "EIN SCAN",
+    "fastSync": "Schnelle Synchronisation mit Ihrem POS-System",
     "saveTime": "Zeit sparen",
     "saveMoney": "Geld sparen",
     "earnLoyalty": "Kundenloyalität gewinnen",
@@ -81,59 +87,59 @@
       "itWorks": "es funktioniert",
       "sync": "Synchronisieren Sie Ihr POS",
       "inMin": "in nur 15 Minuten",
-      "syncText": "Unser professionelles Team wird in nur 15 Minuten synchronisieren und QR-Codes generieren können. Sie haben dies bereits hunderte Male getan.",
+      "syncText": "Unser professionelles Team wird in nur 15 Minuten synchronisieren und QR-Codes generieren können. Sie haben dies bereits hunderte Male getan",
       "setup": "Konfigurieren Sie unser System",
       "inMinutes": "in 10 Minuten",
-      "setuptext": "Registrieren Sie alle Mitarbeiter Ihres Betriebs - in einer Minute für sofortige kontaktlose Zahlungen.",
+      "setuptext": "Registrieren Sie alle Mitarbeiter Ihres Betriebs - in einer Minute für sofortige kontaktlose Zahlungen",
       "collect": "Zahlungen",
       "inSec": "in 5 Sekunden sammeln",
-      "collectText": "Kunden können sie scannen, um Rechnungen anzuzeigen, zu teilen, Trinkgeld zu geben und in 5 Sekunden zu bezahlen. Es ist sicher und zuverlässig."
+      "collectText": "Kunden können sie scannen, um Rechnungen anzuzeigen, zu teilen, Trinkgeld zu geben und in 5 Sekunden zu bezahlen. Es ist sicher und zuverlässig"
     },
     "perfectHost": {
       "ensure": "Seien Sie der perfekte Gastgeber",
       "withQuicker": "mit schnelleren",
       "checkins": "Check-ins und Check-outs",
       "qr": "QR codes",
-      "qrText": "YPAY bietet individuelle, einzigartige QR-Codes für jeden Tisch, was Ihrem Personal hilft, Zahlungen besser zu verfolgen.",
+      "qrText": "YPAY bietet individuelle, einzigartige QR-Codes für jeden Tisch, was Ihrem Personal hilft, Zahlungen besser zu verfolgen",
       "ci": "Kontinuierliche Integration",
-      "ciText": "YPAY synchronisiert sich direkt mit Ihrem Point-of-Sale-System, ohne die Art und Weise zu ändern, wie Sie Ihr Geschäft führen.",
+      "ciText": "YPAY synchronisiert sich direkt mit Ihrem Point-of-Sale-System, ohne die Art und Weise zu ändern, wie Sie Ihr Geschäft führen",
       "noApp": "KEINE APP",
-      "noAppText": "Ihre Kunden müssen keine App herunterladen. YPAY ist ein webbasiertes Zahlungssystem, das in allen Webbrowsern funktioniert.",
+      "noAppText": "Ihre Kunden müssen keine App herunterladen. YPAY ist ein webbasiertes Zahlungssystem, das in allen Webbrowsern funktioniert",
       "rtd": "ECHTZEITDATEN",
-      "rtdText": "Abgeschlossene Transaktionen werden sofort auf Ihrem Dashboard angezeigt. Und Sie können darauf von jedem Gerät aus zugreifen."
+      "rtdText": "Abgeschlossene Transaktionen werden sofort auf Ihrem Dashboard angezeigt. Und Sie können darauf von jedem Gerät aus zugreifen"
     },
     "primed": {
       "primed": "Bereit und wartet darauf",
-      "toJoin": "sich Ihrem POS-Team anzuschließen.",
+      "toJoin": "sich Ihrem POS-Team anzuschließen",
       "already": "YPAY ist bereits in führende POS-Systeme integriert. Sie können das System in weniger als 48 Stunden starten!"
     },
     "goLive": {
       "go": "IN WENIGER ALS",
       "than48": "48 STUNDEN LIVE GEHEN!",
-      "youReach": "Sie nehmen Kontakt mit uns auf.",
-      "youReachText": "Geben Sie einige Details im Kontaktformular an und unser Team wird mit einem Besprechungsplan antworten.",
-      "weGen": "Wir generieren QR-Codes.",
-      "weGenText": "Sie sind einzigartig für jeden Tisch und Ihre Marke, sodass Sie Rechnungen und Zahlungen verfolgen können.",
-      "train": "Wir schulen Ihr Personal.",
-      "trainText": "Wir zeigen Ihrem Personal, wie man YPAY benutzt, und sie werden in 15 Minuten vollständig bereit sein.",
+      "youReach": "Sie nehmen Kontakt mit uns auf",
+      "youReachText": "Geben Sie einige Details im Kontaktformular an und unser Team wird mit einem Besprechungsplan antworten",
+      "weGen": "Wir generieren QR-Codes",
+      "weGenText": "Sie sind einzigartig für jeden Tisch und Ihre Marke, sodass Sie Rechnungen und Zahlungen verfolgen können",
+      "train": "Wir schulen Ihr Personal",
+      "trainText": "Wir zeigen Ihrem Personal, wie man YPAY benutzt, und sie werden in 15 Minuten vollständig bereit sein",
       "accept": "Sie akzeptieren Zahlungen",
       "acceptText": "Jetzt sind Sie bereit, sich auf die Schaffung eines unglaublichen Gastronomieerlebnisses zu konzentrieren"
     }
   },
   "about": {
     "aboutUs": "Über uns",
-    "ourP": "Unser Programm ist der perfekte Weg, um den Bestell- und Zahlungsprozess in Ihrem Lieblingslokal zu optimieren. Mit Hilfe von QR-Codes können Sie Ihre Bestellung ganz einfach aufgeben und bezahlen, ohne Ihren Tisch verlassen zu müssen. Scannen Sie einfach den QR-Code auf Ihrem Tisch oder in der Speisekarte mit unserer App und erhalten Sie Zugang zur vollständigen Liste der Gerichte und Getränke.",
-    "once": "Sobald Sie Ihre Lieblingsgerichte ausgewählt haben, können Sie Ihre Bestellung direkt von Ihrem Smartphone aus aufgeben. Darüber hinaus ermöglicht Ihnen unser Programm, spezielle Wünsche oder Anmerkungen zu Ihrer Bestellung hinzuzufügen. Wenn Sie fertig sind, wählen Sie einfach die Zahlungsoption aus und bezahlen Sie Ihre Bestellung direkt über die App.",
-    "quick": "Es ist schnell, bequem und sicher - Sie können Ihr Mittag- oder Abendessen genießen, ohne Zeit damit zu verschwenden, auf Service zu warten oder Zahlungen zu bearbeiten. Unser Programm ist darauf ausgelegt, Ihren Komfort und Ihre Zufriedenheit zu maximieren und Ihren Aufenthalt im Lokal so angenehm wie möglich zu gestalten.",
-    "over": "Heute arbeiten über 1000 Restaurants mit YPAY zusammen.",
-    "countries": "In den Vereinigten Arabischen Emiraten, Polen, Deutschland, der Ukraine und Spanien. Wir sind global! Wir nennen sie unsere Partner, weil wir mit ihnen zusammenarbeiten, um ihren Kunden ein schnelles, nahtloses Bestellerlebnis zu bieten.",
+    "ourP": "Unser Programm ist der perfekte Weg, um den Bestell- und Zahlungsprozess in Ihrem Lieblingslokal zu optimieren. Mit Hilfe von QR-Codes können Sie Ihre Bestellung ganz einfach aufgeben und bezahlen, ohne Ihren Tisch verlassen zu müssen. Scannen Sie einfach den QR-Code auf Ihrem Tisch oder in der Speisekarte mit unserer App und erhalten Sie Zugang zur vollständigen Liste der Gerichte und Getränke",
+    "once": "Sobald Sie Ihre Lieblingsgerichte ausgewählt haben, können Sie Ihre Bestellung direkt von Ihrem Smartphone aus aufgeben. Darüber hinaus ermöglicht Ihnen unser Programm, spezielle Wünsche oder Anmerkungen zu Ihrer Bestellung hinzuzufügen. Wenn Sie fertig sind, wählen Sie einfach die Zahlungsoption aus und bezahlen Sie Ihre Bestellung direkt über die App",
+    "quick": "Es ist schnell, bequem und sicher - Sie können Ihr Mittag- oder Abendessen genießen, ohne Zeit damit zu verschwenden, auf Service zu warten oder Zahlungen zu bearbeiten. Unser Programm ist darauf ausgelegt, Ihren Komfort und Ihre Zufriedenheit zu maximieren und Ihren Aufenthalt im Lokal so angenehm wie möglich zu gestalten",
+    "over": "Heute arbeiten über 1000 Restaurants mit YPAY zusammen",
+    "countries": "In den Vereinigten Arabischen Emiraten, Polen, Deutschland, der Ukraine und Spanien. Wir sind global! Wir nennen sie unsere Partner, weil wir mit ihnen zusammenarbeiten, um ihren Kunden ein schnelles, nahtloses Bestellerlebnis zu bieten",
     "who": {
       "who": "WER WIR SIND",
-      "ourTeam": "Unser Team ist eine eingeschworene Gruppe talentierter Entwickler, Designer und Ingenieure, die an der Entwicklung einer Anwendung arbeiten, die schnelle und bequeme Bestell- und Zahlungsvorgänge ermöglicht. Unser Ziel ist es, unseren Nutzern maximalen Komfort zu bieten, indem wir eine intuitive und benutzerfreundliche Oberfläche gestalten, die es ermöglicht, Gerichte zu bestellen und mit nur wenigen Klicks zu bezahlen.",
-      "weD": "Wir setzen erhebliche Anstrengungen ein, um die höchste Qualität und Zuverlässigkeit unserer Anwendung sicherzustellen. Durch kontinuierliche Hinzufügung neuer Funktionen und Verbesserungen streben wir danach, unseren Nutzern das bestmögliche Nutzungserlebnis zu bieten. Unser Ziel ist es, den Bestell- und Zahlungsvorgang so einfach und effizient wie möglich zu gestalten, damit unsere Nutzer ihre Zeit mit Familie und Freunden genießen können, ohne sich um Kleinigkeiten kümmern zu müssen."
+      "ourTeam": "Unser Team ist eine eingeschworene Gruppe talentierter Entwickler, Designer und Ingenieure, die an der Entwicklung einer Anwendung arbeiten, die schnelle und bequeme Bestell- und Zahlungsvorgänge ermöglicht. Unser Ziel ist es, unseren Nutzern maximalen Komfort zu bieten, indem wir eine intuitive und benutzerfreundliche Oberfläche gestalten, die es ermöglicht, Gerichte zu bestellen und mit nur wenigen Klicks zu bezahlen",
+      "weD": "Wir setzen erhebliche Anstrengungen ein, um die höchste Qualität und Zuverlässigkeit unserer Anwendung sicherzustellen. Durch kontinuierliche Hinzufügung neuer Funktionen und Verbesserungen streben wir danach, unseren Nutzern das bestmögliche Nutzungserlebnis zu bieten. Unser Ziel ist es, den Bestell- und Zahlungsvorgang so einfach und effizient wie möglich zu gestalten, damit unsere Nutzer ihre Zeit mit Familie und Freunden genießen können, ohne sich um Kleinigkeiten kümmern zu müssen"
     },
-    "noMore": "Kein Warten mehr darauf, dass der Kellner endlich während der Stoßzeiten zu Ihrem Tisch kommt.",
-    "noMore2": "Keine Probleme mehr beim Aufteilen der Rechnungen, wenn Sie mit Freunden unterwegs sind.",
+    "noMore": "Kein Warten mehr darauf, dass der Kellner endlich während der Stoßzeiten zu Ihrem Tisch kommt",
+    "noMore2": "Keine Probleme mehr beim Aufteilen der Rechnungen, wenn Sie mit Freunden unterwegs sind",
     "flawless": "Makellose Bequemlichkeit"
   },
   "contact": {
@@ -145,7 +151,7 @@
     "did": "Haben Sie etwas",
     "anything": "verpasst?",
     "what": "Was ist YPAY?",
-    "whatText": "YPAY - ist ein Zahlungssystem, das speziell für die Verwendung in Restaurants mit Tischservice entwickelt wurde. Dieses System ermöglicht es Kunden, ihre Rechnungen einfach und bequem zu begleichen, ohne auf einen Kellner warten zu müssen. Kunden können ihre Mobiltelefone verwenden, um die Rechnung einzusehen, aufzuteilen, den Trinkgeldbetrag anzugeben und die Zahlung vorzunehmen. Dies macht den Zahlungsprozess sowohl für Kunden als auch für Restaurants bequemer und schneller.",
+    "whatText": "YPAY - ist ein Zahlungssystem, das speziell für die Verwendung in Restaurants mit Tischservice entwickelt wurde. Dieses System ermöglicht es Kunden, ihre Rechnungen einfach und bequem zu begleichen, ohne auf einen Kellner warten zu müssen. Kunden können ihre Mobiltelefone verwenden, um die Rechnung einzusehen, aufzuteilen, den Trinkgeldbetrag anzugeben und die Zahlung vorzunehmen. Dies macht den Zahlungsprozess sowohl für Kunden als auch für Restaurants bequemer und schneller",
     "how": "Woher weiß ich, dass die Kunden bezahlt haben?",
     "howText": "Nach der Zahlung wird die Bestellung an Ihrer Kasse automatisch und sofort abgeschlossen",
     "do": "Brauchen Kunden eine App, um YPAY zu nutzen?",

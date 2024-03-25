@@ -51,7 +51,7 @@
               {{ $t('forR.how.syncText') }}
             </p>
           </div>
-          <img src="/for-restaurants/card1.png" alt="" />
+          <img src="/for-restaurants/card1.png" alt="" class="h-44" />
         </div>
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="pl-7 flex flex-col justify-between">
@@ -61,7 +61,7 @@
               {{ $t('forR.how.setuptext') }}
             </p>
           </div>
-          <img src="/for-restaurants/card2.png" alt="" />
+          <img src="/for-restaurants/card2.png" alt="" class="h-44" />
         </div>
         <div class="flex flex-col bg-green justify-between pt-12 rounded-[17px] hover:shadow-lg transition-all">
           <div class="px-7 flex flex-col justify-between">
@@ -71,7 +71,7 @@
               {{ $t('forR.how.collectText') }}
             </p>
           </div>
-          <img src="/for-restaurants/card3.png" alt="" />
+          <img src="/for-restaurants/card3.png" alt="" class="h-44" />
         </div>
       </div>
     </div>

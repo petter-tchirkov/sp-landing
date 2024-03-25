@@ -14,13 +14,19 @@
     "country": "Country/Region",
     "restaurantName": "Name of your restaurant",
     "join": "Join Y-PAY",
-    "today": "today!"
+    "today": "today!",
+    "nameReq": "Name is required",
+    "emailReq": "Email is required",
+    "emailValid": "Email is invalid",
+    "phoneReq": "Phone is required",
+    "phoneValid": "Phone is invalid",
+    "countryReq": "Country is required"
   },
   "index": {
     "hero": {
-      "payForYourMeal": "Pay for your meal at the restaurant",
+      "payForYourMeal": "Pay for your meals",
       "fast": "Fast",
-      "imagineGuests": "Imagine your guests being able to quickly browse the menu and pay for their orders with a simple scan",
+      "imagineGuests": "Imagine that your guests can quickly browse the menu and pay for their meals with a simple scan",
       "seatFaster": "Seat tables faster",
       "earnTips": "Earn more tips",
       "fastPayment": "Fast and secure payment",
@@ -49,15 +55,15 @@
       },
       "experience": "The payment experience",
       "crave": "that guests crave today",
-      "scan": "Place the QR code on the table. Customers scan it with any smartphone. The menu and bill appear in a heartbeat.",
-      "split": "Everyone at the table scans the QR code. They can choose to pay by items or divide the bill equally. No calculator needed.",
-      "tip": "While paying the bill, the customer gets an option to tip. With one click, they can show appreciation with no hassle.",
-      "pay": "Instant payments with Apple Pay, Google Pay, or any local or international debit or credit card."
+      "scan": "Place the QR code on the table. Customers scan it with any smartphone. The menu and bill appear in a heartbeat",
+      "split": "Everyone at the table scans the QR code. They can choose to pay by items or divide the bill equally. No calculator needed",
+      "tip": "While paying the bill, the customer gets an option to tip. With one click, they can show appreciation with no hassle",
+      "pay": "Instant payments with Apple Pay, Google Pay, or any local or international debit or credit card"
     },
     "flexible": {
       "bePrepared": "Be prepared",
-      "toAccept": "to accept various payment methods.",
-      "customerChoice": "Every customer has a choice. Y-PAY collaborates with leading global payment partners."
+      "toAccept": "to accept various payment methods",
+      "customerChoice": "Every customer has a choice. Y-PAY collaborates with leading global payment partners"
     },
     "rave": {
       "countries": "1000+ restaurants in 5 countries rave about",
@@ -65,7 +71,7 @@
     },
     "primed": {
       "primed": "Primed and ready",
-      "toJoin": "to join your POS team.",
+      "toJoin": "to join your POS team",
       "already": "Y-PAY is already integrated with leading POS systems. You can launch the system in less than 48 hours!"
     }
   },
@@ -81,26 +87,26 @@
       "itWorks": "it works",
       "sync": "Sync your POS",
       "inMin": "in just 15 minutes",
-      "syncText": "Sync your POS in just 15 minutes. Our professional team will be able to synchronize and generate QR codes in just 15 minutes. They've done this hundreds of times.",
+      "syncText": "Sync your POS in just 15 minutes. Our professional team will be able to synchronize and generate QR codes in just 15 minutes. They've done this hundreds of times",
       "setup": "Set up our system",
       "inMinutes": "in 10 minutes",
-      "setuptext": "Register all staff members of your establishment - in one minute for instant contactless payments.",
+      "setuptext": "Register all staff members of your establishment - in one minute for instant contactless payments",
       "collect": "Collect payments",
       "inSec": "in 5 seconds",
-      "collectText": "Customers can scan them to view bills, split, tip, and pay in 5 seconds. It's safe and secure."
+      "collectText": "Customers can scan them to view bills, split, tip, and pay in 5 seconds. It's safe and secure"
     },
     "perfectHost": {
       "ensure": "Ensure perfect hospitality",
       "withQuicker": "with quicker",
       "checkins": "check-ins and checkouts.",
       "qr": "QR codes",
-      "qrText": "Y-PAY provides individual, unique QR codes for each table, helping your staff to better track payments.",
+      "qrText": "Y-PAY provides individual, unique QR codes for each table, helping your staff to better track payments",
       "ci": "Continuous integration",
-      "ciText": "Y-PAY syncs directly with your point of sale system without changing how you run your business.",
+      "ciText": "Y-PAY syncs directly with your point of sale system without changing how you run your business",
       "noApp": "No app",
-      "noAppText": "Your customers don't need to download any app. Y-PAY is a web-based payment service that works on all web browsers.",
+      "noAppText": "Your customers don't need to download any app. Y-PAY is a web-based payment service that works on all web browsers",
       "rtd": "Real-time data",
-      "rtdText": "Completed transactions are instantly reflected on your dashboard. And you can access it from any device."
+      "rtdText": "Completed transactions are instantly reflected on your dashboard. And you can access it from any device"
     },
     "primed": {
       "primed": "Primed and ready",
@@ -111,11 +117,11 @@
       "go": "go live in less",
       "than48": "than 48 hours",
       "youReach": "You reach out to us",
-      "youReachText": "Provide a few details in the contact form and our team will reply with a meeting schedule.",
+      "youReachText": "Provide a few details in the contact form and our team will reply with a meeting schedule",
       "weGen": "We generate QR codes",
-      "weGenText": "They are unique to each table and your brand, so you can keep track of bills and payments.",
+      "weGenText": "They are unique to each table and your brand, so you can keep track of bills and payments",
       "train": "We are training your personnel",
-      "trainText": "We will show your staff how to use Y-PAY, and they will be fully ready in 15 minutes.",
+      "trainText": "We will show your staff how to use Y-PAY, and they will be fully ready in 15 minutes",
       "accept": "You accept payments",
       "acceptText": "Now you're ready to focus on creating an incredible dining experience"
     }
@@ -126,7 +132,7 @@
     "once": "Once you've selected your favorite items, you can place your order directly from your smartphone. Additionally, our program allows you to add any special requests or clarifications to your order. When you're finished, just select the payment option and pay for your order directly through the app",
     "quick": "It's quick, convenient, and secure – you can enjoy your lunch or dinner without wasting time waiting for service or processing payment. Our program is designed for your comfort and satisfaction, making your stay at the establishment as enjoyable as possible",
     "over": "Today, over 1000 restaurants are partnered with Y-PAY",
-    "countries": "In the United Arab Emirates, Poland, Germany, Ukraine, and Spain. We are global! We call them our partners because we collaborate with them to provide their customers with a fast, seamless ordering experience.",
+    "countries": "In the United Arab Emirates, Poland, Germany, Ukraine, and Spain. We are global! We call them our partners because we collaborate with them to provide their customers with a fast, seamless ordering experience",
     "who": {
       "who": "Who we are",
       "ourTeam": "Our team is a cohesive group of talented developers, designers, and engineers working on creating an application that facilitates quick and convenient ordering and payment processes. We aim to provide maximum comfort for our users, thus designing an intuitive and user-friendly interface that allows ordering dishes and paying for them with just a few clicks",

@@ -14,7 +14,7 @@
                         <h2 class="hero__subtitle text-[36px] lg:text-[48px] font-bold uppercase text-white mb-7">
                             {{ $t("index.hero.fast") }}
                         </h2>
-                        <p class="hero__description">
+                        <p class="hero__description mb-14">
                             {{ $t("index.hero.imagineGuests") }}
                         </p>
                         <button class="hero__btn btn btn-light" @click="scrollToForm">{{ $t("header.bookADemo")
@@ -153,7 +153,7 @@
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
-        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover bg-center py-24 lg:pb-96">
+        <section class="flexible bg-[url(/index/flexible-bg.png)] bg-cover py-24 lg:py-96">
             <div class="flexible__content px-11 xl:px-40 flex flex-col md:flex-row justify-between container">
                 <div class="flexible__left flex flex-col justify-center pt-32 md:pt-0">
                     <h2 class="flexible__title black-title">{{ $t('index.flexible.bePrepared') }}</h2>
@@ -209,7 +209,7 @@
             <div class="prime__content container px-11 xl:px-40">
                 <h2 class="prime__title black-title">{{ $t('index.primed.primed') }}</h2>
                 <h3 class="prime__subtitle green-title mb-7">{{ $t('index.primed.toJoin') }}</h3>
-                <p class="prime__text mb-[70px]">{{ $t('index.primed.already') }}</p>
+                <p class="prime__text mb-[70px] text-xl">{{ $t('index.primed.already') }}</p>
                 <div class="prime__carousel bg-[#f8f8f8] shadow-box rounded-[60px] py-12 mb-32">
                     <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"
                         :wrap-around="true">
@@ -323,7 +323,6 @@ const getExperienceText = computed(() => {
     &__description {
         font-size: 20px;
         color: #fff;
-        margin-bottom: 56px;
     }
 
     &__specs {
@@ -481,7 +480,8 @@ const getExperienceText = computed(() => {
 
 @media screen and (max-width: 1024px) {
     .flexible {
-        background-position: 10% top;
+        background-position: center;
+        background-attachment: fixed;
     }
 }
 </style>
