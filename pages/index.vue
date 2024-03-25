@@ -80,7 +80,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    12
+                                    <AnimatedNumber :max-value="12" />
                                 </span>
                                 <span class="dine-in__rest"> {{ '&nbsp;' + $t('index.give.min') }}</span>
                             </div>
@@ -94,7 +94,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    340
+                                    <AnimatedNumber :max-value="340" />
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
@@ -107,11 +107,11 @@
                         <div class="dine-in__sphere group">
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
-                                <span class="dine-in__rest" v-if="locale === 'ua'">У</span>
+                                <span class="dine-in__rest" v-if="locale === 'ua'">У&nbsp;</span>
                                 <span class="dine-in__number">
-                                    8
+                                    <AnimatedNumber :max-value="8" />
                                 </span>
-                                <span class="dine-in__rest">{{ $t('index.give.x') }}</span>
+                                <span class="dine-in__rest">&nbsp;{{ $t('index.give.x') }}</span>
                             </div>
                         </div>
                         <div class="dine-in__description max-w-64">
@@ -123,7 +123,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    100
+                                    <AnimatedNumber :max-value="100" />
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
