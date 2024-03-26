@@ -46,26 +46,26 @@ const scrollToForm = (selector: string, offset: number) => {
       <NuxtLink @click="reloadPage" class="after:hidden">
         <img src="/logo.svg" class="w-[160px]" />
       </NuxtLink>
-      <ul class="hidden xl:flex items-center gap-4">
-        <li class="nav__item text-white text-sm 2xl:text-lg">
+      <ul class="hidden 2xl:flex items-center gap-4">
+        <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/for-restaurants')">
             {{ $t("header.forRestaurants") }}
           </NuxtLink>
         </li>
-        <li class="nav__item text-white text-sm 2xl:text-lg">
+        <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/about-us')">{{ $t('header.aboutUs') }}</NuxtLink>
         </li>
-        <li class="nav__item text-white text-sm 2xl:text-lg">
+        <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/contact-us')">{{ $t('header.contactUs') }}</NuxtLink>
         </li>
-        <li class="nav__item text-white text-sm 2xl:text-lg">
+        <li class="nav__item text-white text-lg">
           <NuxtLink class="nav__link" :to="localePath('/faqs')">{{ $t('header.faqs') }}</NuxtLink>
         </li>
       </ul>
-      <button class="xl:hidden" @click="isSidebarShown = !isSidebarShown">
+      <button class="2xl:hidden" @click="isSidebarShown = !isSidebarShown">
         <img src="/burger.svg" alt="" />
       </button>
-      <div class="hidden xl:flex items-center gap-5 mb-2 lg:mb-0 ml-12">
+      <div class="hidden 2xl:flex items-center gap-5 mb-2 lg:mb-0 ml-12">
         <LangSwitcher />
         <button
           class="border border-white rounded-[35px] bg-green text-white py-[11px] px-9 hover:bg-white hover:text-green transition font-bold">
