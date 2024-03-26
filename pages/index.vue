@@ -170,7 +170,8 @@
                     {{ $t('header.bookADemo') }}
                 </button>
             </div>
-            <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" />
+            <!-- <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" /> -->
+            <video src="/video.mp4" autoplay="autoplay" muted loop class="object-contain w-96 h-[36rem]"></video>
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
