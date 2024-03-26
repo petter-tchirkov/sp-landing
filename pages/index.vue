@@ -21,7 +21,7 @@
                                 $t("header.bookADemo")
                             }}</button>
                     </div>
-                    <img src="/index/qr.png" alt="" class="hover:animate-wiggle">
+                    <img src="/index/qr.png" alt="" class="animate-wiggle">
                 </div>
                 <div class="hero__specs flex flex-col lg:flex-row mx-11 xl:mx-0 xl:ml-40">
                     <div class="hero__spec">
@@ -56,8 +56,8 @@
                 <div class="trusted__carousel">
                     <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200"
                         :wrap-around="true">
-                        <slide v-for="slide in 16" :key="slide">
-                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover" />
+                        <slide v-for="slide in 15" :key="slide">
+                            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-contain bg-white" />
                         </slide>
                         <template #addons>
                             <navigation />
