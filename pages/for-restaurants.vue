@@ -138,7 +138,7 @@
         style="box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.25)">
         <carousel :items-to-show="width > 1024 ? 5 : 1" :transition="2000" :autoplay="200" :wrap-around="true">
           <slide v-for="slide in 16" :key="slide">
-            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover" />
+            <img :src="`/brands/${slide}.webp`" alt="" class="w-64 h-28 object-cover bg-white" />
           </slide>
           <template #addons>
             <navigation />
