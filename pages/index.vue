@@ -137,7 +137,7 @@
         </section>
         <!-- END OF DINE-IN -->
         <!-- PAYMENT -->
-        <section class="payment container flex flex-col lg:flex-row px-4 xl:px-40 pt-24">
+        <section class="payment container flex flex-col items-center lg:items-start lg:flex-row px-4 xl:px-40 pt-24">
             <div class="payment__content">
                 <h2 class="payment__title"
                     :class="locale === 'de' ? 'text-2xl xl:text-[40px] font-bold uppercase' : 'black-title'">
@@ -171,7 +171,9 @@
                 </button>
             </div>
             <!-- <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" /> -->
-            <video src="/video.mp4" autoplay="autoplay" muted loop class="object-contain w-96 h-[36rem]"></video>
+            <video id="autoplay" autoplay="autoplay" playsinline muted loop class="object-contain w-64">
+                <source src="/video.mp4" type="video/mp4" />
+            </video>
         </section>
         <!-- END OG PAYMENT -->
         <!-- FLEXIBILITY -->
@@ -267,16 +269,16 @@ const scrollToForm = (selector: string, offset: number) => {
     window.scrollTo({
         behavior: 'smooth',
         top:
-            document.querySelector(selector).getBoundingClientRect().top -
+            document.querySelector(selector)!.getBoundingClientRect().top -
             document.body.getBoundingClientRect().top -
             offset,
     })
 };
 
-const mins = ref(12)
-const percent = ref(340)
-const x = ref(8)
-const guarantee = ref(100)
+onMounted(() => {
+    const video = document.getElementById('autoplay') as HTMLVideoElement;
+    video.play();
+});
 
 const reviews = ref([
     {
