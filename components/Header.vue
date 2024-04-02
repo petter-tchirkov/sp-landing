@@ -44,7 +44,7 @@ const scrollToForm = (selector: string, offset: number) => {
     :class="!isOnTop ? 'bg-green' : 'bg-transparent'">
     <div class="flex items-center justify-between px-11 xl:px-36 w-full max-w-dp mx-auto">
       <NuxtLink @click="reloadPage" class="after:hidden">
-        <img src="/logo.svg" class="w-[160px]" />
+        <img src="/logo.png" class="w-[160px]" />
       </NuxtLink>
       <ul class="hidden xl:flex items-center gap-4">
         <li class="nav__item text-white text-sm 2xl:text-lg">
