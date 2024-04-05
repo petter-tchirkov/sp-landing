@@ -101,7 +101,7 @@ const { src = "customer.png" } = defineProps<{ src: string }>();
 const submitForm = async () => {
   const result = await v$.value.$validate();
   if (result) {
-    await $fetch(`http://94.130.13.81:8085/api/Messages`, {
+    await $fetch(`https://api.yumaxpay.com/api/Messages`, {
       method: "POST",
       body: formData.value,
       onResponse({ response }) {
