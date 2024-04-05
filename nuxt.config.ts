@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: "Y-PAY",
+      title: "YUMAX",
       link: [{ rel: "icon", type: "image/png", href: "/favicon.svg" }],
     },
   },

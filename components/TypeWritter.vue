@@ -1,6 +1,6 @@
 <template>
   <div class="h-10">
-    <span>{{ showText }}</span>
+    <span class="transition">{{ showText }}</span>
   </div>
 </template>
 
@@ -37,5 +37,5 @@ const operateText = () => {
     incrementText()
   }
 }
-onMounted(() => { setInterval(operateText, 300) })
+onMounted(() => { setInterval(operateText, 700) })
 </script>

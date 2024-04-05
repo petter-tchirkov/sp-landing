@@ -40,7 +40,7 @@ const scrollToForm = (selector: string, offset: number) => {
 </script>
 
 <template>
-  <header class="py-10 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
+  <header class="py-4 w-full border-b border-b-white fixed top-0 left-0 z-20 transition"
     :class="!isOnTop ? 'bg-green' : 'bg-transparent'">
     <div class="flex items-center justify-between px-11 xl:px-36 w-full max-w-dp mx-auto">
       <NuxtLink @click="reloadPage" class="after:hidden">

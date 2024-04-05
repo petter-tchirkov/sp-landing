@@ -13,7 +13,7 @@
     "phone": "Phone number",
     "country": "País",
     "restaurantName": "Nombre de su restaurante",
-    "join": "¡Únete a YPAY",
+    "join": "¡Únete a YUMAX",
     "today": "hoy mismo!",
     "nameReq": "Nombre es requerido",
     "emailReq": "Correo electrónico es requerido",
@@ -63,7 +63,7 @@
     "flexible": {
       "bePrepared": "Estar preparado",
       "toAccept": "para aceptar varios métodos de pago",
-      "customerChoice": "Cada cliente tiene una opción. YPAY colabora con los principales socios de pago globales"
+      "customerChoice": "Cada cliente tiene una opción. YUMAX colabora con los principales socios de pago globales"
     },
     "rave": {
       "countries": "Más de 1000 restaurantes en 5 países alaban nuestros",
@@ -72,7 +72,7 @@
     "primed": {
       "primed": "Listo y preparado",
       "toJoin": "para unirse a su equipo de POS",
-      "already": "YPAY ya está integrado con los principales sistemas de POS. ¡Puede lanzar el sistema en menos de 48 horas!"
+      "already": "YUMAX ya está integrado con los principales sistemas de POS. ¡Puede lanzar el sistema en menos de 48 horas!"
     }
   },
   "forR": {
@@ -100,18 +100,18 @@
       "withQuicker": "con registros",
       "checkins": "y salidas más rápidos",
       "qr": "QR-Códigos",
-      "qrText": "YPAY proporciona códigos QR individuales y únicos para cada mesa, lo que ayuda a su personal a realizar un mejor seguimiento de los pagos",
+      "qrText": "YUMAX proporciona códigos QR individuales y únicos para cada mesa, lo que ayuda a su personal a realizar un mejor seguimiento de los pagos",
       "ci": "Integración continua",
-      "ciText": "YPAY se sincroniza directamente con su sistema de punto de venta sin cambiar la forma en que dirige su negocio",
+      "ciText": "YUMAX se sincroniza directamente con su sistema de punto de venta sin cambiar la forma en que dirige su negocio",
       "noApp": "SIN APLICACIÓN",
-      "noAppText": "Tus clientes no necesitan descargar ninguna aplicación. YPAY es un servicio de pago basado en web que funciona en todos los navegadores web",
+      "noAppText": "Tus clientes no necesitan descargar ninguna aplicación. YUMAX es un servicio de pago basado en web que funciona en todos los navegadores web",
       "rtd": "DATOS EN TIEMPO REAL",
       "rtdText": "Las transacciones completadas se reflejan instantáneamente en tu panel de control. Y puedes acceder a él desde cualquier dispositivo"
     },
     "primed": {
       "primed": "Listo y preparado",
       "toJoin": "para unirse a su equipo de POS",
-      "already": "YPAY ya está integrado con los principales sistemas de POS. ¡Puede lanzar el sistema en menos de 48 horas!"
+      "already": "YUMAX ya está integrado con los principales sistemas de POS. ¡Puede lanzar el sistema en menos de 48 horas!"
     },
     "goLive": {
       "go": "¡PUESTA EN MARCHA",
@@ -121,7 +121,7 @@
       "weGen": "Generamos códigos QR",
       "weGenText": "Son únicos para cada mesa y tu marca, así que puedes realizar un seguimiento de las cuentas y los pagos",
       "train": "Estamos entrenando a su personal",
-      "trainText": "Mostraremos a su personal cómo usar YPAY y estarán completamente listos en 15 minutos",
+      "trainText": "Mostraremos a su personal cómo usar YUMAX y estarán completamente listos en 15 minutos",
       "accept": "Usted acepta pagos",
       "acceptText": "Ahora estás listo para concentrarte en crear una experiencia gastronómica increíble"
     }
@@ -131,7 +131,7 @@
     "ourP": "Nuestro programa es la manera perfecta de agilizar el proceso de pedido y pago en su establecimiento favorito. Mediante códigos QR, puede realizar y pagar su pedido fácilmente sin tener que salir de su mesa. Simplemente escanee el código QR ubicado en su mesa o en el menú utilizando nuestra aplicación y acceda a la lista completa de platos y bebidas",
     "once": "Una vez que haya seleccionado sus platos favoritos, puede realizar su pedido directamente desde su teléfono inteligente. Además, nuestro programa le permite agregar cualquier solicitud especial o aclaración a su pedido. Cuando haya terminado, simplemente seleccione la opción de pago y pague su pedido directamente a través de la aplicación",
     "quick": "Es rápido, conveniente y seguro: puede disfrutar de su almuerzo o cena sin perder tiempo esperando servicio o procesando el pago. Nuestro programa está diseñado para su comodidad y satisfacción, haciendo que su estancia en el establecimiento sea lo más agradable posible",
-    "over": "Hoy en día, más de 1000 restaurantes están asociados con YPAY",
+    "over": "Hoy en día, más de 1000 restaurantes están asociados con YUMAX",
     "countries": "En los Emiratos Árabes Unidos, Polonia, Alemania, Ucrania y España. ¡Somos globales! Los llamamos nuestros socios porque colaboramos con ellos para brindar a sus clientes una experiencia de pedido rápida y sin interrupciones",
     "who": {
       "who": "QUIÉNES SOMOS",
@@ -150,24 +150,24 @@
   "faqs": {
     "did": "¿Te has perdido",
     "anything": "algo?",
-    "what": "¿Qué es YPAY?",
-    "whatText": "YPAY - es un sistema de pago diseñado específicamente para su uso en restaurantes con servicio de mesa. Este sistema permite a los clientes liquidar sus cuentas de manera fácil y conveniente sin necesidad de esperar a un camarero. Los clientes pueden utilizar sus teléfonos móviles para ver la cuenta, dividirla, especificar la cantidad de propina y realizar el pago. Esto hace que el proceso de pago sea más conveniente y rápido tanto para los clientes como para los restaurantes",
+    "what": "¿Qué es YUMAX?",
+    "whatText": "YUMAX - es un sistema de pago diseñado específicamente para su uso en restaurantes con servicio de mesa. Este sistema permite a los clientes liquidar sus cuentas de manera fácil y conveniente sin necesidad de esperar a un camarero. Los clientes pueden utilizar sus teléfonos móviles para ver la cuenta, dividirla, especificar la cantidad de propina y realizar el pago. Esto hace que el proceso de pago sea más conveniente y rápido tanto para los clientes como para los restaurantes",
     "how": "¿Cómo sé que los clientes han pagado?",
     "howText": "Tras el pago, el pedido se cierra automática e instantáneamente en la caja",
-    "do": "¿Necesitan los clientes una aplicación para utilizar YPAY?",
+    "do": "¿Necesitan los clientes una aplicación para utilizar YUMAX?",
     "doText": "No, sólo tienen que hacer clic e ir a la página web en su navegador, sin necesidad de descargas ni de registrarse",
     "doYou": "¿Se integran con sistemas de punto de venta?",
     "doYouText": "Nos integramos con cualquier sistema de punto de venta en 48 horas",
-    "whatAre": "¿Cuáles son las ventajas de YPAY?",
+    "whatAre": "¿Cuáles son las ventajas de YUMAX?",
     "whatAreText": "Mejor experiencia del cliente, facturación de 3 a 5 minutos más rápida, el doble de propinas",
     "howLong": "¿Cuánto se tarda en instalarse?",
-    "howLongText": "Empezar con YPAY es así de sencillo. Tras firmar el contrato, solo tardaremos 24 horas en poner en marcha su restaurante con YPAY",
-    "can": "¿Pueden los invitados hacer un pedido a través de YPAY?",
-    "canText": "No, no pueden. Puedes subir o enlazar tu menú en YPAY para que tus clientes puedan verlo",
+    "howLongText": "Empezar con YUMAX es así de sencillo. Tras firmar el contrato, solo tardaremos 24 horas en poner en marcha su restaurante con YUMAX",
+    "can": "¿Pueden los invitados hacer un pedido a través de YUMAX?",
+    "canText": "No, no pueden. Puedes subir o enlazar tu menú en YUMAX para que tus clientes puedan verlo",
     "is": "¿Es difícil configurar y formar a mi personal?",
     "isText": "No. La instalación lleva unos minutos y la formación del personal 15 minutos",
-    "which": "¿Qué establecimientos encuentran más rentable YPAY?",
-    "whichText": "YPAY funciona muy bien en cualquier restaurante de servicio de mesa, desde los informales hasta los de alta cocina",
+    "which": "¿Qué establecimientos encuentran más rentable YUMAX?",
+    "whichText": "YUMAX funciona muy bien en cualquier restaurante de servicio de mesa, desde los informales hasta los de alta cocina",
     "howMuch": "¿Cuánto me costará?",
     "howMuchText": "Puede ser totalmente gratuito si opta por repercutir la tasa como recargo"
   }

@@ -2,7 +2,7 @@
   <footer class="footer pt-[220px]">
     <div class="footer__content flex flex-col lg:flex-row px-11 xl:px-40 justify-between lg:mb-20">
       <div class="footer__logo mb-7 xl:mb-0">
-        <img src="/logo.svg" alt="Logo" />
+        <img src="/logo.png" alt="Logo" class="w-[160px]" />
       </div>
       <ul class="flex flex-col xl:flex-row xl:items-center gap-9 mb-9 xl:mb-0">
         <li class="nav__item text-white text-lg">
