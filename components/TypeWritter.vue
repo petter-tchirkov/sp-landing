@@ -37,5 +37,5 @@ const operateText = () => {
     incrementText()
   }
 }
-onMounted(() => { setInterval(operateText, 700) })
+onMounted(() => { setInterval(operateText, 200) })
 </script>

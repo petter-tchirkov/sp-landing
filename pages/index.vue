@@ -18,7 +18,7 @@
                             {{ $t("index.hero.imagineGuests") }}
                         </p>
                         <button class="hero__btn btn btn-light" @click="scrollToForm('.apply', 150)">{{
-                                $t("header.bookADemo")
+                            $t("header.bookADemo")
                             }}</button>
                     </div>
                     <img src="/index/qr.png" alt="" class="animate-wiggle">
