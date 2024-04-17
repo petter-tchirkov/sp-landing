@@ -19,7 +19,7 @@
                         </p>
                         <button class="hero__btn btn btn-light" @click="scrollToForm('.apply', 150)">{{
                             $t("header.bookADemo")
-                            }}</button>
+                        }}</button>
                     </div>
                     <img src="/index/qr.png" alt="" class="animate-wiggle">
                 </div>
@@ -171,7 +171,8 @@
                 </button>
             </div>
             <!-- <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" /> -->
-            <video id="autoplay" autoplay="autoplay" playsinline muted loop class="object-contain w-64">
+            <video id="autoplay" autoplay="autoplay" style="background-color: '#fff'" playsinline muted loop
+                class="object-contain w-64 !bg-white">
                 <source src="/video.mp4" type="video/mp4" />
             </video>
         </section>
