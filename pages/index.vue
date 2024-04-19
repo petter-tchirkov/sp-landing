@@ -19,7 +19,7 @@
                         </p>
                         <button class="hero__btn btn btn-light" @click="scrollToForm('.apply', 150)">{{
                             $t("header.bookADemo")
-                        }}</button>
+                            }}</button>
                     </div>
                     <img src="/index/qr.png" alt="" class="animate-wiggle">
                 </div>
@@ -94,7 +94,7 @@
                             <div class="w-24 h-24 rounded-full bg-black transition mb-9 group-hover:scale-125"></div>
                             <div class="flex absolute top-[25px] left-[55px]">
                                 <span class="dine-in__number">
-                                    <AnimatedNumber :max-value="340" />
+                                    <AnimatedNumber :max-value="34" />
                                 </span>
                                 <span class="dine-in__rest">%</span>
                             </div>
@@ -170,9 +170,7 @@
                     {{ $t('header.bookADemo') }}
                 </button>
             </div>
-            <!-- <img src="/index/hollow-phone.png" class="w-[230px] mx-auto xl:mx-0 xl:ml-32 rounded-xl" alt="" /> -->
-            <video id="autoplay" autoplay="autoplay" style="background-color: '#fff'" playsinline muted loop
-                class="object-contain w-64 !bg-white">
+            <video ref="video" id="autoplay" playsinline muted loop class="object-contain w-64 !bg-white">
                 <source src="/video.mp4" type="video/mp4" />
             </video>
         </section>
@@ -259,7 +257,22 @@
 import { useWindowSize } from "@vueuse/core";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
+import { useIntersectionObserver } from '@vueuse/core'
 
+const video = ref<HTMLVideoElement | null>(null)
+const isVideoVisible = ref(false)
+useIntersectionObserver(
+    video,
+    ([{ isIntersecting }]) => {
+        isVideoVisible.value = isIntersecting
+    },
+)
+
+watch(isVideoVisible, (value) => {
+    if (value) {
+        video.value?.play()
+    }
+})
 
 const { width } = useWindowSize();
 const { locale } = useI18n();
@@ -276,10 +289,7 @@ const scrollToForm = (selector: string, offset: number) => {
     })
 };
 
-onMounted(() => {
-    const video = document.getElementById('autoplay') as HTMLVideoElement;
-    video.play();
-});
+
 
 const reviews = ref([
     {
